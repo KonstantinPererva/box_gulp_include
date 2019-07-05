@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Крон-Авто | Онлайн-кабинет</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700,600italic,600,300italic,300,400italic,700italic&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+
+        .inpsearchgm1 {
+            padding-left: 35px !important;
+        }
+
+        .srs__select {
+            position: absolute;
+            z-index: 999;
+            background: #f7f7f7;
+            width: 82%;
+            box-shadow: 0px 4px 7px -2px rgba(0, 0, 0, 0.31);
+        }
+
+        .srs__select.disabled {
+            display: none;
+        }
+
+        .srs__select_option {
+            line-height: 23px;
+            padding-left: 37px;
+            cursor: pointer;
+        }
+
+        .srs__select_option:hover, .srs__select_option.hover {
+            background-color: #eaeaef;
+        }
+
+        .srs__lang {
+            top: 1px;
+            left: 1px;
+            position: absolute;
+            width: 30px;
+            height: 22px;
+            background: #e8e8e8;
+            line-height: normal;
+            padding-left: 5px;
+        }
+
+        .mobile .srs__select_option {
+            line-height: 32px;
+            font-weight: bold;
+        }
+
+        .srs__select.mobile {
+            top: 44px;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            z-index: 9999999;
+        }
+
+        .search-form .inpsearchgm.focus {
+            position: fixed;
+            height: 44px;
+            transition: all .5s;
+            top: 0;
+            z-index: 9999999;
+            left: 0;
+            border-radius: 0px;
+        }
+
+        .search-form .input-row.mask:after {
+            position: fixed;
+            content: "";
+            z-index: 999999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            opacity: 0.6;
+
+        }
+
+        .filter-blur {
+            filter: blur(2px);
+        }
+
+        th.srs__container {
+            position: relative;
+            overflow: visible;
+        }
+
+        th.srs__container .srs__select {
+            width: 99%;
+            box-shadow: 0px 7px 14px 1px rgba(0, 0, 0, 0.31);
+        }
+
+        th.srs__container .srs__select_option {
+            padding-left: 8px;
+            text-align: left;
+        }
+
+        .table-cat .new-span, .new-span {
+            color: #1268b1;
+            text-transform: uppercase;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .table-cat span.extra-bonus {
+            background: #b13712;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            width: 16px;
+            font-size: 11px;
+            line-height: 16px;
+            padding: 0 3px;
+            height: 16px;
+            color: #ffffff;
+            margin: 0 0 0 9px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        /*voice search*/
+        #voiceSearchBtn {
+            width: 50px;
+            height: 24px;
+            position: absolute;
+            background: rgb(249, 61, 95);
+            background: -moz-linear-gradient(45deg, rgba(132, 250, 175, 1) 0%, rgba(143, 210, 244, 1) 100%);
+            background: -webkit-linear-gradient(45deg, rgba(132, 250, 175, 1) 0%, rgba(143, 210, 244, 1) 100%);
+            border-radius: 13px;
+            top: 0;
+            z-index: 1000;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        #voiceSearchBtn:before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 24px;
+            top: 0;
+            left: 0;
+            background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ3NS4wODUgNDc1LjA4NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc1LjA4NSA0NzUuMDg1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTIzNy41NDEsMzI4Ljg5N2MyNS4xMjgsMCw0Ni42MzItOC45NDYsNjQuNTIzLTI2LjgzYzE3Ljg4OC0xNy44ODQsMjYuODMzLTM5LjM5OSwyNi44MzMtNjQuNTI1VjkxLjM2NSAgICBjMC0yNS4xMjYtOC45MzgtNDYuNjMyLTI2LjgzMy02NC41MjVDMjg0LjE3Myw4Ljk1MSwyNjIuNjY5LDAsMjM3LjU0MSwwYy0yNS4xMjUsMC00Ni42MzIsOC45NTEtNjQuNTI0LDI2Ljg0ICAgIGMtMTcuODkzLDE3Ljg5LTI2LjgzOCwzOS4zOTktMjYuODM4LDY0LjUyNXYxNDYuMTc3YzAsMjUuMTI1LDguOTQ5LDQ2LjY0MSwyNi44MzgsNjQuNTI1ICAgIEMxOTAuOTA2LDMxOS45NTEsMjEyLjQxNiwzMjguODk3LDIzNy41NDEsMzI4Ljg5N3oiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMzk2LjU2MywxODguMTVjLTMuNjA2LTMuNjE3LTcuODk4LTUuNDI2LTEyLjg0Ny01LjQyNmMtNC45NDQsMC05LjIyNiwxLjgwOS0xMi44NDcsNS40MjYgICAgYy0zLjYxMywzLjYxNi01LjQyMSw3Ljg5OC01LjQyMSwxMi44NDV2MzYuNTQ3YzAsMzUuMjE0LTEyLjUxOCw2NS4zMzMtMzcuNTQ4LDkwLjM2MmMtMjUuMDIyLDI1LjAzLTU1LjE0NSwzNy41NDUtOTAuMzYsMzcuNTQ1ICAgIGMtMzUuMjE0LDAtNjUuMzM0LTEyLjUxNS05MC4zNjUtMzcuNTQ1Yy0yNS4wMjgtMjUuMDIyLTM3LjU0MS01NS4xNDctMzcuNTQxLTkwLjM2MnYtMzYuNTQ3YzAtNC45NDctMS44MDktOS4yMjktNS40MjQtMTIuODQ1ICAgIGMtMy42MTctMy42MTctNy44OTUtNS40MjYtMTIuODQ3LTUuNDI2Yy00Ljk1MiwwLTkuMjM1LDEuODA5LTEyLjg1LDUuNDI2Yy0zLjYxOCwzLjYxNi01LjQyNiw3Ljg5OC01LjQyNiwxMi44NDV2MzYuNTQ3ICAgIGMwLDQyLjA2NSwxNC4wNCw3OC42NTksNDIuMTEyLDEwOS43NzZjMjguMDczLDMxLjExOCw2Mi43NjIsNDguOTYxLDEwNC4wNjgsNTMuNTI2djM3LjY5MWgtNzMuMDg5ICAgIGMtNC45NDksMC05LjIzMSwxLjgxMS0xMi44NDcsNS40MjhjLTMuNjE3LDMuNjE0LTUuNDI2LDcuODk4LTUuNDI2LDEyLjg0N2MwLDQuOTQxLDEuODA5LDkuMjMzLDUuNDI2LDEyLjg0NyAgICBjMy42MTYsMy42MTQsNy44OTgsNS40MjgsMTIuODQ3LDUuNDI4aDE4Mi43MTljNC45NDgsMCw5LjIzNi0xLjgxMywxMi44NDctNS40MjhjMy42MjEtMy42MTMsNS40MzEtNy45MDUsNS40MzEtMTIuODQ3ICAgIGMwLTQuOTQ4LTEuODEtOS4yMzItNS40MzEtMTIuODQ3Yy0zLjYxLTMuNjE3LTcuODk4LTUuNDI4LTEyLjg0Ny01LjQyOGgtNzMuMDh2LTM3LjY5MSAgICBjNDEuMjk5LTQuNTY1LDc1Ljk4NS0yMi40MDgsMTA0LjA2MS01My41MjZjMjguMDc2LTMxLjExNyw0Mi4xMi02Ny43MTEsNDIuMTItMTA5Ljc3NnYtMzYuNTQ3ICAgIEM0MDEuOTk4LDE5Ni4wNDksNDAwLjE4NSwxOTEuNzcsMzk2LjU2MywxODguMTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: .3s;
+        }
+
+        #voiceSearchBtn:hover {
+            background: -moz-linear-gradient(45deg, rgba(143, 210, 244, 1) 0%, rgba(132, 250, 175, 1) 100%);
+            background: -webkit-linear-gradient(45deg, rgba(143, 210, 244, 1) 0%, rgba(132, 250, 175, 1) 100%);
+        }
+
+        #voiceSearchBtn:hover:before {
+            background-size: 13px;
+        }
+
+        #voiceSearchBtn.active {
+            background: linear-gradient(2deg, #2fb273, #ee4141, #03b9cc, #f92aa8);
+            background-size: 800% 800%;
+            -webkit-animation: AnimationName 3s ease infinite;
+            animation: AnimationName 3s ease infinite;
+        }
+
+        @-webkit-keyframes AnimationName {
+            0% {
+                background-position: 51% 0%
+            }
+            50% {
+                background-position: 50% 100%
+            }
+            100% {
+                background-position: 51% 0%
+            }
+        }
+
+        @keyframes AnimationName {
+            0% {
+                background-position: 51% 0%
+            }
+            50% {
+                background-position: 50% 100%
+            }
+            100% {
+                background-position: 51% 0%
+            }
+        }
+
+        .search-form.voicesearchContainer .input-row {
+            margin-left: 64px;
+        }
+
+        .voicesearchContainer .srs__lang {
+            left: 65px;
+        }
+
+        .b24-widget-button-wrapper {
+            bottom: 130px;
+            position: fixed;
+            display: block;
+            left: 15px;
+        }
+
+        #bx-panel.bx-panel-fixed {
+            top: 40px !important;
+        }
+
+        #bx-panel {
+            top: 40px !important;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrapper" data-wrapper="main">
+    <div class="button-come-back" data-button="come-back">
+        <div class="button-come-back__ico-wrap">
+            <svg class="button-come-back__ico" width="45" height="45" viewBox="0 0 90 90" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M74.9998 59.9577C75.0091 60.9936 74.696 62.0069 74.1038 62.8569C73.5116 63.7069 72.6698 64.3516 71.6949 64.7018C70.72 65.0519 69.6603 65.0901 68.6627 64.8111C67.6651 64.5321 66.7791 63.9496 66.1272 63.1444L45.0008 37.7913L23.8763 63.1444C23.4603 63.6595 22.9459 64.0868 22.3633 64.4012C21.7806 64.7156 21.1412 64.911 20.4823 64.976C19.8234 65.0409 19.1582 64.9741 18.5253 64.7795C17.8925 64.5849 17.3047 64.2664 16.7961 63.8425C16.2875 63.4185 15.8683 62.8976 15.5629 62.3101C15.2575 61.7226 15.072 61.0802 15.0171 60.4203C14.9623 59.7605 15.0393 59.0962 15.2436 58.4664C15.4478 57.8365 15.7753 57.2536 16.207 56.7515L41.1671 26.7958C41.6356 26.2338 42.222 25.7815 42.8847 25.4712C43.5473 25.1609 44.2701 25 45.0018 25C45.7335 25 46.4563 25.1609 47.1189 25.4712C47.7816 25.7815 48.368 26.2338 48.8365 26.7958L73.7966 56.7515C74.5631 57.645 74.9892 58.7805 74.9998 59.9577V59.9577Z"/>
+                <path d="M2.5 0C1.83698 6.62921e-05 1.20113 0.263534 0.732306 0.732361C0.26348 1.20119 6.62921e-05 1.83698 0 2.5V87.5001C6.62921e-05 88.1631 0.26348 88.7989 0.732306 89.2678C1.20113 89.7366 1.83698 90 2.5 90.0001H87.5C88.163 90 88.7989 89.7366 89.2677 89.2678C89.7365 88.7989 89.9999 88.1631 90 87.5001V2.5C89.9999 1.83698 89.7365 1.20119 89.2677 0.732361C88.7989 0.263534 88.163 6.62921e-05 87.5 0H2.5ZM5 5H85V85.0001H5V5Z"/>
+            </svg>
+        </div>
+    </div>
+
+    
+
+    <main role="main">
+        <div class="catalog" data-grid="catalog-container">
+            <aside class="aside" data-grid="catalog-cell-left">
+                <div class="accordiion" data-grid="catalog-row-top-cell-left">
+
+                    
+
+                </div>
+
+                <div class="resize-vert" data-grid="catalog-lever-vertical-cell-left">
+                    <span data-grid="button-toggle"></span>
+                </div>
+
+                <div class="cat-filter" data-grid="catalog-row-bottom-cell-left">
+
+                    
+
+                </div>
+
+                <div class="resize-horiz" data-grid="catalog-lever-horizontal">
+                    <span data-grid="button-toggle"></span>
+                </div>
+            </aside>
+
+            <div class="main-holder" data-grid="catalog-cell-right">
+                <div class="catalog-container">
+
+                    
+
+                    
+
+                    
+
+                </div>
+
+                <div class="resize-vert" data-grid="">
+                    <span data-grid="button-toggle"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--<script src="javascripts/cabinet-catalog.js"></script>-->
+<script src="./js/filter.js"></script>
+<script src="./js/test-resize-box.js"></script>
+
+<script>
+    (function () {
+        var filter = new Filter();
+
+        var par = document.querySelector('.catalog-filter-list');
+
+        filter.counterWidth(par);
+
+        console.log(filter.elem);
+
+        var catalogHorizontalResize = new Resizing({
+            direction: 'horizontal', //'horizontal' or 'vertical'
+            node: '[data-grid="catalog-container"]',
+            lever: '[data-grid="catalog-lever-horizontal"]',
+            button: '[data-grid="button-toggle"]',
+            hide: 'left',
+            boxLeft: '[data-grid="catalog-cell-left"]',
+            boxRight: '[data-grid="catalog-cell-right"]',
+            // resizeListener: filter.childrenShare()
+        });
+        catalogHorizontalResize.init();
+
+        var catalogVerticalLeftBoxResize = new Resizing({
+            direction: 'vertical', //'horizontal' or 'vertical'
+            node: '[data-grid="catalog-cell-left"]',
+            lever: '[data-grid="catalog-lever-vertical-cell-left"]',
+            button: '[data-grid="button-toggle"]',
+            hide: 'bottom',
+            boxTop: '[data-grid="catalog-row-top-cell-left"]',
+            boxBottom: '[data-grid="catalog-row-bottom-cell-left"]'
+        });
+        catalogVerticalLeftBoxResize.init();
+        //
+        // var catalogVerticalRightBoxResize = new Resizing({
+        //     direction: 'vertical', //'horizontal' or 'vertical'
+        //     node: '[data-grid="catalog-cell-right"]',
+        //     lever: '[data-grid="catalog-lever-vertical-cell-right"]',
+        //     button: '[data-grid="button-toggle"]',
+        //     hide: 'bottom',
+        //     boxTop: '[data-grid="catalog-row-top-cell-right"]',
+        //     boxBottom: '[data-grid="catalog-row-bottom-cell-right"]'
+        // });
+        // catalogVerticalRightBoxResize.init();
+    })();
+</script>
+
+<!--<script>-->
+<!--(function($) {-->
+<!--$(function() {-->
+<!--$('input[type="number"],input[type="checkbox"], select').styler({-->
+<!--selectSearch: true-->
+<!--});-->
+<!--});-->
+<!--})(jQuery);-->
+<!--</script>-->
+</body>
+</html>
