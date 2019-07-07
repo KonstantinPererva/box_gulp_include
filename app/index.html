@@ -2,282 +2,3256 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-    <title>Крон-Авто | Онлайн-кабинет</title>
+  <title>Крон-Авто | Онлайн-кабинет</title>
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css"/>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700,600italic,600,300italic,300,400italic,700italic&subset=latin,cyrillic'
-          rel='stylesheet' type='text/css'>
-
-    <style type="text/css">
-
-        .inpsearchgm1 {
-            padding-left: 35px !important;
-        }
-
-        .srs__select {
-            position: absolute;
-            z-index: 999;
-            background: #f7f7f7;
-            width: 82%;
-            box-shadow: 0px 4px 7px -2px rgba(0, 0, 0, 0.31);
-        }
-
-        .srs__select.disabled {
-            display: none;
-        }
-
-        .srs__select_option {
-            line-height: 23px;
-            padding-left: 37px;
-            cursor: pointer;
-        }
-
-        .srs__select_option:hover, .srs__select_option.hover {
-            background-color: #eaeaef;
-        }
-
-        .srs__lang {
-            top: 1px;
-            left: 1px;
-            position: absolute;
-            width: 30px;
-            height: 22px;
-            background: #e8e8e8;
-            line-height: normal;
-            padding-left: 5px;
-        }
-
-        .mobile .srs__select_option {
-            line-height: 32px;
-            font-weight: bold;
-        }
-
-        .srs__select.mobile {
-            top: 44px;
-            width: 100%;
-            position: fixed;
-            left: 0;
-            z-index: 9999999;
-        }
-
-        .search-form .inpsearchgm.focus {
-            position: fixed;
-            height: 44px;
-            transition: all .5s;
-            top: 0;
-            z-index: 9999999;
-            left: 0;
-            border-radius: 0px;
-        }
-
-        .search-form .input-row.mask:after {
-            position: fixed;
-            content: "";
-            z-index: 999999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            opacity: 0.6;
-
-        }
-
-        .filter-blur {
-            filter: blur(2px);
-        }
-
-        th.srs__container {
-            position: relative;
-            overflow: visible;
-        }
-
-        th.srs__container .srs__select {
-            width: 99%;
-            box-shadow: 0px 7px 14px 1px rgba(0, 0, 0, 0.31);
-        }
-
-        th.srs__container .srs__select_option {
-            padding-left: 8px;
-            text-align: left;
-        }
-
-        .table-cat .new-span, .new-span {
-            color: #1268b1;
-            text-transform: uppercase;
-            font-size: 8px;
-            font-weight: bold;
-        }
-
-        .table-cat span.extra-bonus {
-            background: #b13712;
-            display: inline-block;
-            vertical-align: middle;
-            border-radius: 50%;
-            width: 16px;
-            font-size: 11px;
-            line-height: 16px;
-            padding: 0 3px;
-            height: 16px;
-            color: #ffffff;
-            margin: 0 0 0 9px;
-            font-weight: normal;
-            text-align: center;
-        }
-
-        /*voice search*/
-        #voiceSearchBtn {
-            width: 50px;
-            height: 24px;
-            position: absolute;
-            background: rgb(249, 61, 95);
-            background: -moz-linear-gradient(45deg, rgba(132, 250, 175, 1) 0%, rgba(143, 210, 244, 1) 100%);
-            background: -webkit-linear-gradient(45deg, rgba(132, 250, 175, 1) 0%, rgba(143, 210, 244, 1) 100%);
-            border-radius: 13px;
-            top: 0;
-            z-index: 1000;
-            cursor: pointer;
-            transition: .3s;
-        }
-
-        #voiceSearchBtn:before {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 24px;
-            top: 0;
-            left: 0;
-            background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ3NS4wODUgNDc1LjA4NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc1LjA4NSA0NzUuMDg1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTIzNy41NDEsMzI4Ljg5N2MyNS4xMjgsMCw0Ni42MzItOC45NDYsNjQuNTIzLTI2LjgzYzE3Ljg4OC0xNy44ODQsMjYuODMzLTM5LjM5OSwyNi44MzMtNjQuNTI1VjkxLjM2NSAgICBjMC0yNS4xMjYtOC45MzgtNDYuNjMyLTI2LjgzMy02NC41MjVDMjg0LjE3Myw4Ljk1MSwyNjIuNjY5LDAsMjM3LjU0MSwwYy0yNS4xMjUsMC00Ni42MzIsOC45NTEtNjQuNTI0LDI2Ljg0ICAgIGMtMTcuODkzLDE3Ljg5LTI2LjgzOCwzOS4zOTktMjYuODM4LDY0LjUyNXYxNDYuMTc3YzAsMjUuMTI1LDguOTQ5LDQ2LjY0MSwyNi44MzgsNjQuNTI1ICAgIEMxOTAuOTA2LDMxOS45NTEsMjEyLjQxNiwzMjguODk3LDIzNy41NDEsMzI4Ljg5N3oiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMzk2LjU2MywxODguMTVjLTMuNjA2LTMuNjE3LTcuODk4LTUuNDI2LTEyLjg0Ny01LjQyNmMtNC45NDQsMC05LjIyNiwxLjgwOS0xMi44NDcsNS40MjYgICAgYy0zLjYxMywzLjYxNi01LjQyMSw3Ljg5OC01LjQyMSwxMi44NDV2MzYuNTQ3YzAsMzUuMjE0LTEyLjUxOCw2NS4zMzMtMzcuNTQ4LDkwLjM2MmMtMjUuMDIyLDI1LjAzLTU1LjE0NSwzNy41NDUtOTAuMzYsMzcuNTQ1ICAgIGMtMzUuMjE0LDAtNjUuMzM0LTEyLjUxNS05MC4zNjUtMzcuNTQ1Yy0yNS4wMjgtMjUuMDIyLTM3LjU0MS01NS4xNDctMzcuNTQxLTkwLjM2MnYtMzYuNTQ3YzAtNC45NDctMS44MDktOS4yMjktNS40MjQtMTIuODQ1ICAgIGMtMy42MTctMy42MTctNy44OTUtNS40MjYtMTIuODQ3LTUuNDI2Yy00Ljk1MiwwLTkuMjM1LDEuODA5LTEyLjg1LDUuNDI2Yy0zLjYxOCwzLjYxNi01LjQyNiw3Ljg5OC01LjQyNiwxMi44NDV2MzYuNTQ3ICAgIGMwLDQyLjA2NSwxNC4wNCw3OC42NTksNDIuMTEyLDEwOS43NzZjMjguMDczLDMxLjExOCw2Mi43NjIsNDguOTYxLDEwNC4wNjgsNTMuNTI2djM3LjY5MWgtNzMuMDg5ICAgIGMtNC45NDksMC05LjIzMSwxLjgxMS0xMi44NDcsNS40MjhjLTMuNjE3LDMuNjE0LTUuNDI2LDcuODk4LTUuNDI2LDEyLjg0N2MwLDQuOTQxLDEuODA5LDkuMjMzLDUuNDI2LDEyLjg0NyAgICBjMy42MTYsMy42MTQsNy44OTgsNS40MjgsMTIuODQ3LDUuNDI4aDE4Mi43MTljNC45NDgsMCw5LjIzNi0xLjgxMywxMi44NDctNS40MjhjMy42MjEtMy42MTMsNS40MzEtNy45MDUsNS40MzEtMTIuODQ3ICAgIGMwLTQuOTQ4LTEuODEtOS4yMzItNS40MzEtMTIuODQ3Yy0zLjYxLTMuNjE3LTcuODk4LTUuNDI4LTEyLjg0Ny01LjQyOGgtNzMuMDh2LTM3LjY5MSAgICBjNDEuMjk5LTQuNTY1LDc1Ljk4NS0yMi40MDgsMTA0LjA2MS01My41MjZjMjguMDc2LTMxLjExNyw0Mi4xMi02Ny43MTEsNDIuMTItMTA5Ljc3NnYtMzYuNTQ3ICAgIEM0MDEuOTk4LDE5Ni4wNDksNDAwLjE4NSwxOTEuNzcsMzk2LjU2MywxODguMTV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: .3s;
-        }
-
-        #voiceSearchBtn:hover {
-            background: -moz-linear-gradient(45deg, rgba(143, 210, 244, 1) 0%, rgba(132, 250, 175, 1) 100%);
-            background: -webkit-linear-gradient(45deg, rgba(143, 210, 244, 1) 0%, rgba(132, 250, 175, 1) 100%);
-        }
-
-        #voiceSearchBtn:hover:before {
-            background-size: 13px;
-        }
-
-        #voiceSearchBtn.active {
-            background: linear-gradient(2deg, #2fb273, #ee4141, #03b9cc, #f92aa8);
-            background-size: 800% 800%;
-            -webkit-animation: AnimationName 3s ease infinite;
-            animation: AnimationName 3s ease infinite;
-        }
-
-        @-webkit-keyframes AnimationName {
-            0% {
-                background-position: 51% 0%
-            }
-            50% {
-                background-position: 50% 100%
-            }
-            100% {
-                background-position: 51% 0%
-            }
-        }
-
-        @keyframes AnimationName {
-            0% {
-                background-position: 51% 0%
-            }
-            50% {
-                background-position: 50% 100%
-            }
-            100% {
-                background-position: 51% 0%
-            }
-        }
-
-        .search-form.voicesearchContainer .input-row {
-            margin-left: 64px;
-        }
-
-        .voicesearchContainer .srs__lang {
-            left: 65px;
-        }
-
-        .b24-widget-button-wrapper {
-            bottom: 130px;
-            position: fixed;
-            display: block;
-            left: 15px;
-        }
-
-        #bx-panel.bx-panel-fixed {
-            top: 40px !important;
-        }
-
-        #bx-panel {
-            top: 40px !important;
-        }
-    </style>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700,600italic,600,300italic,300,400italic,700italic&subset=latin,cyrillic'
+        rel='stylesheet' type='text/css'/>
 </head>
 
 <body>
 <div id="wrapper" data-wrapper="main">
-    <div class="button-come-back" data-button="come-back">
-        <div class="button-come-back__ico-wrap">
-            <svg class="button-come-back__ico" width="45" height="45" viewBox="0 0 90 90" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M74.9998 59.9577C75.0091 60.9936 74.696 62.0069 74.1038 62.8569C73.5116 63.7069 72.6698 64.3516 71.6949 64.7018C70.72 65.0519 69.6603 65.0901 68.6627 64.8111C67.6651 64.5321 66.7791 63.9496 66.1272 63.1444L45.0008 37.7913L23.8763 63.1444C23.4603 63.6595 22.9459 64.0868 22.3633 64.4012C21.7806 64.7156 21.1412 64.911 20.4823 64.976C19.8234 65.0409 19.1582 64.9741 18.5253 64.7795C17.8925 64.5849 17.3047 64.2664 16.7961 63.8425C16.2875 63.4185 15.8683 62.8976 15.5629 62.3101C15.2575 61.7226 15.072 61.0802 15.0171 60.4203C14.9623 59.7605 15.0393 59.0962 15.2436 58.4664C15.4478 57.8365 15.7753 57.2536 16.207 56.7515L41.1671 26.7958C41.6356 26.2338 42.222 25.7815 42.8847 25.4712C43.5473 25.1609 44.2701 25 45.0018 25C45.7335 25 46.4563 25.1609 47.1189 25.4712C47.7816 25.7815 48.368 26.2338 48.8365 26.7958L73.7966 56.7515C74.5631 57.645 74.9892 58.7805 74.9998 59.9577V59.9577Z"/>
-                <path d="M2.5 0C1.83698 6.62921e-05 1.20113 0.263534 0.732306 0.732361C0.26348 1.20119 6.62921e-05 1.83698 0 2.5V87.5001C6.62921e-05 88.1631 0.26348 88.7989 0.732306 89.2678C1.20113 89.7366 1.83698 90 2.5 90.0001H87.5C88.163 90 88.7989 89.7366 89.2677 89.2678C89.7365 88.7989 89.9999 88.1631 90 87.5001V2.5C89.9999 1.83698 89.7365 1.20119 89.2677 0.732361C88.7989 0.263534 88.163 6.62921e-05 87.5 0H2.5ZM5 5H85V85.0001H5V5Z"/>
-            </svg>
-        </div>
+
+  <header id="header" class="frame">
+  <div class="holder-frame">
+    <div class="logo-menu-box">
+      <div class="logo">
+        <a href="/catalog/">
+          <img src="https://kronavto.ua/local/templates/catalog_page/images/logo-cat.png" alt="image description"/>
+        </a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="/catalog/">Каталог</a></li>
+
+        <li><a href="/shares/">Бонусная система</a></li>
+
+        <li><a href="/personal/order/">Журнал заказов</a></li>
+
+        <li><a href="/how/">Как купить</a></li>
+
+        <li><a href="/agreement/">Взаиморасчеты</a></li>
+      </ul>
     </div>
 
-    
+    <ul class="link-block">
+      <li id="changesForSite">
+        <div class="countNews"></div>
+      </li>
 
-    <main role="main">
-        <div class="catalog" data-grid="catalog-container">
-            <aside class="aside" data-grid="catalog-cell-left">
-                <div class="accordiion" data-grid="catalog-row-top-cell-left">
+      <li data-bonusses-value="" class="bonuscount">Бонусы: <span>0 грн.</span></li>
 
-                    
+      <li>Общий долг: 0 грн.</li>
 
+      <li class="dropname">
+        <svg
+                class="dropname__ico"
+                width="20"
+                viewBox="0 0 68 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+          <path d="M44.268 57.659L44.08 57.599C43.212 57.325 42.46 57.085 41.571 54.615C44.405 52.231 47.01 48.909 48.757 45.604C50.831 45.36 52.819 42.039 53.869 38.781C55.032 35.178 55.213 31.213 53.484 30.041C54.933 27.97 56.424 24.848 56.889 20.436C57.291 16.613 55.84 10.405 51.702 5.809C48.497 2.249 44.252 0.367996 39.424 0.367996C33.954 0.367996 27.745 2.731 20.967 7.394C20.867 7.399 20.756 7.4 20.638 7.4L19.28 7.383C17.16 7.383 14.511 7.687 12.824 10.056C10.384 13.48 10.868 20.076 14.303 30.208C12.803 31.554 13.016 35.333 14.129 38.781C15.18 42.04 17.168 45.361 19.241 45.604C20.989 48.91 23.596 52.234 26.431 54.618C25.543 57.086 24.792 57.324 23.925 57.597L23.738 57.657C9.374 62.321 0.798 73.982 0.798 88.851V89.633H67.201V88.851C67.202 73.985 58.628 62.324 44.268 57.659ZM49.424 61.513L37.128 83.032V71.336C37.128 71.256 37.116 71.179 37.094 71.106C37.76 70.52 38.259 69.749 38.51 68.873L39.882 70.403L46.918 60.322C47.78 60.69 48.615 61.088 49.424 61.513ZM34 70.71C32.275 70.71 30.872 69.307 30.872 67.582C30.872 67.507 30.861 67.435 30.841 67.366L32.704 65.289C32.776 65.209 32.828 65.118 32.861 65.023H35.137C35.17 65.119 35.222 65.209 35.294 65.289L37.157 67.366C37.137 67.435 37.126 67.507 37.126 67.582C37.128 69.307 35.725 70.71 34 70.71ZM44.326 59.327C44.698 59.454 45.065 59.586 45.428 59.723L39.729 67.89L36.552 64.35L44.326 59.327ZM14.098 10.962C15.363 9.186 17.428 8.946 19.28 8.946L20.638 8.963C20.9 8.963 21.131 8.955 21.324 8.934C21.453 8.919 21.576 8.873 21.683 8.8C28.261 4.242 34.23 1.931 39.424 1.931C43.796 1.931 47.639 3.634 50.54 6.855C54.188 10.908 55.713 16.672 55.335 20.273C54.678 26.508 51.768 29.962 50.293 31.34C48.254 24.917 42.343 20.917 41.038 20.917C40.606 20.917 40.162 21.33 40.162 21.762C40.162 22.248 40.953 25.022 41.698 27.526C37.154 24.78 27.094 20.972 22.816 20.972C21.944 20.972 21.291 21.116 20.821 21.413C20.618 21.541 20.485 21.756 20.461 21.995C19.906 27.439 17.035 29.112 15.747 29.593C12.562 20.164 12.007 13.897 14.098 10.962ZM20.411 44.462C20.254 44.151 19.911 43.979 19.567 44.047C18.868 44.198 16.914 42.319 15.617 38.3C14.302 34.225 14.816 31.578 15.458 31.302C16.216 31.15 21.028 29.904 21.963 22.619C22.146 22.575 22.418 22.537 22.815 22.537C27.824 22.537 40.917 28.097 42.525 30.075C42.682 30.268 42.96 30.364 43.149 30.364C43.558 30.343 43.945 30.018 43.945 29.582C43.945 29.425 43.899 29.28 43.82 29.158C43.131 26.888 42.423 24.466 42.032 23.023C44.007 24.293 47.908 27.708 49.094 32.885C49.151 33.133 49.325 33.339 49.562 33.435C49.657 33.473 49.757 33.492 49.856 33.492C50.005 33.492 50.152 33.449 50.281 33.367C50.375 33.306 51.342 32.663 52.517 31.292C53.17 31.513 53.713 34.176 52.381 38.302C51.084 42.32 49.115 44.182 48.431 44.048C48.089 43.981 47.745 44.153 47.587 44.463C44.224 51.109 38.128 56.517 33.999 56.517C29.87 56.516 23.775 51.109 20.411 44.462ZM27.722 55.625C29.824 57.139 31.997 58.08 33.999 58.08C36.002 58.08 38.177 57.138 40.28 55.622C40.984 57.393 41.71 58.186 42.51 58.638L35.048 63.459H32.224L25.444 58.664C26.264 58.219 27.005 57.431 27.722 55.625ZM23.672 59.327L31.186 64.64L28.27 67.89L22.571 59.723C22.934 59.586 23.301 59.454 23.672 59.327ZM21.081 60.321L28.118 70.402L29.49 68.872C29.741 69.748 30.24 70.519 30.906 71.105C30.884 71.178 30.872 71.255 30.872 71.335V83.031L18.576 61.513C19.385 61.087 20.22 60.689 21.081 60.321ZM2.37 88.069C2.61 76.883 8.004 67.676 17.208 62.272L30.896 86.226C30.931 86.368 31.005 86.494 31.106 86.593L31.949 88.069H2.37ZM35.564 85.768L34.249 88.068H33.75L32.435 85.768V72.005C32.924 72.179 33.451 72.274 33.999 72.274C34.547 72.274 35.073 72.179 35.563 72.005V85.768H35.564ZM36.05 88.069L36.893 86.593C36.994 86.494 37.068 86.367 37.103 86.226L50.791 62.272C59.996 67.677 65.389 76.884 65.629 88.069H36.05V88.069Z"
+                fill="#ffffff" />
+        </svg>
+      </li>
+    </ul>
+
+    <div class="drop-block" style="display: none;">
+      <span class="name">
+        <span class="name__text"> Долгополов М. В. ЧП</span>
+        <span class="name__id">[7846]</span>
+      </span>
+      <span><a href="/personal/profile/">изменить данные</a></span>
+      <span><a href="/?logout=yes">выход</a></span>
+      <span><a href="/personal/order/">журнал заказов</a></span>
+      <span><a href="/how/">как купить</a></span>
+      <span><a href="/return/">возврат товара</a></span>
+      <span><a href="/contact/">контакты</a></span>
+      <span><a href="/agreement/">взаиморасчеты</a></span>
+      <span><a href="/privacy-policy/" target="_blank">пользовательское соглашение</a></span>
+    </div>
+  </div>
+
+  <div class="mobile-header  "><!--здесь три класса first, next, follow -->
+    <span class="opener"></span>
+
+    <div class="btn_hd_bx">
+      <span class="click-zakaz">Заказ 1</span>
+
+      <span class="click-cat">Каталог</span>
+    </div>
+  </div>
+</header>
+
+  <main role="main">
+    <div class="catalog" data-grid="catalog-container">
+      <div class="catalog__hold">
+        <aside class="aside" data-grid="catalog-cell-left">
+          <div class="accordiion" data-grid="catalog-row-top-cell-left">
+
+            <ul class="nav-aside" id="horizontal-multilevel-menu">
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15510">Кузов</a>
+        <ul class="drop-one">
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15511">Вентиляция и
+                отопление</a>
+                <ul>
+                    <li><a class="third_lev" data-section_id="15512" href="#">Радиаторы
+                        отопителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15513" href="#">Патрубки радиатора
+                        отопителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15514" href="#">Краны отопителя</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15515" href="#">Вентиляторы
+                        отопителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15516" href="#">Насосы отопителя</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15517" href="#">Корпусы отопителя</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15518" href="#">Ремени привода
+                        кондиционера</a></li>
+
+                    <li><a class="third_lev" data-section_id="15519" href="#">Фильтры салона</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15905" href="#">Хомуты патрубов
+                        отопителя</a></li>
+
+
+                </ul>
+            </li>
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15520">Окно ветровое и
+                заднее</a>
+                <ul>
+                    <li><a class="third_lev" data-section_id="15521" href="#">Моторы
+                        стеклоочистителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15522" href="#">Моторчики омывателя
+                        (насос)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15523" href="#">Трапеции приводов
+                        стеклоочистителей</a></li>
+
+                    <li><a class="third_lev" data-section_id="15524" href="#">Рычаги
+                        стеклоочистителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15525" href="#">Щетки
+                        стеклоочистителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15526" href="#">Бачки омывателя</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15527" href="#">Жиклеры омывателя
+                        стекла (форсунки)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15528" href="#">Крышки бочка омыватля
+                        (датчики уровня жидкости)</a></li>
+
+
+                </ul>
+            </li>
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15529">Двери передние,
+                задние</a>
+                <ul>
+                    <li><a class="third_lev" data-section_id="15530" href="#">Моторы
+                        стеклоподъемника</a></li>
+
+                    <li><a class="third_lev" data-section_id="15531" href="#">Стеклоподъемники</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15532" href="#">Ручки двери</a></li>
+
+                    <li><a class="third_lev" data-section_id="15533" href="#">Замки дверные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15534" href="#">Ручки
+                        стелоподъемника</a></li>
+
+                    <li><a class="third_lev" data-section_id="15535" href="#">Ограничители двери</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15536" href="#">Обивки двери</a></li>
+
+                    <li><a class="third_lev" data-section_id="15537" href="#">Клипсы обшивки
+                        двери</a></li>
+
+                    <li><a class="third_lev" data-section_id="15538" href="#">Подлокотники</a></li>
+
+                    <li><a class="third_lev" data-section_id="15539" href="#">Ручки подлокотника</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15540" href="#">Облицовки ручки двери
+                        (мыльницы)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15541" href="#">Облицовки динамика</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15542">Дверь задка</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15543" href="#">Упоры крышки
+                        багажника</a></li>
+
+                    <li><a class="third_lev" data-section_id="15544" href="#">Замки багажника</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15545" href="#">Обивки багажника</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15546" href="#">Опоры полки
+                        багажника</a></li>
+
+                    <li><a class="third_lev" data-section_id="15547" href="#">Клипсы обшивки
+                        багажника</a></li>
+
+                    <li><a class="third_lev" data-section_id="15548" href="#">Полки багажника</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15549">Капот, крылья,
+                облицовка радиатора</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15550" href="#">Привода замка
+                        капота</a></li>
+
+                    <li><a class="third_lev" data-section_id="15551" href="#">Решетки радиатора</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15552" href="#">Дефлекторы капота</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15553" href="#">Облицовки фар</a></li>
+
+                    <li><a class="third_lev" data-section_id="15554" href="#">Панели облицовки
+                        радиатора</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15555">Бамперы</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15556" href="#">Бамперы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15557" href="#">Буферы бампера</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15558" href="#">Облицовки
+                        противотуманных фар</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#"
+                               data-section_id="15559">Принадлежности</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15560" href="#">Растяжки передних
+                        стоек</a></li>
+
+                    <li><a class="third_lev" data-section_id="15561" href="#">Замки топливного
+                        бака</a></li>
+
+                    <li><a class="third_lev" data-section_id="15562" href="#">Обивки потолка</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15563" href="#">Буферы фаркопа (Буферы
+                        буксирного прибора)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15564" href="#">Солнцезащитные
+                        козырьки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15565" href="#">Накладки арки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15566" href="#">Зеркала</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15567">Пол кузова</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15568" href="#">Накладки порога</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15569" href="#">Тунели пола</a></li>
+
+                    <li><a class="third_lev" data-section_id="15570" href="#">Ковры салона</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15571">Кузов</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15572" href="#">Молдинги водостока
+                        (удочки)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15573" href="#">Обивки центральной
+                        стойки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15574" href="#">Обивки стоек ветрового
+                        стекла</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15575">Передок
+                кузова</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15576" href="#">Обивки боковины</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15577" href="#">Защелки бардачка
+                        (крышки вещевого ящика)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15578" href="#">Панели
+                        радиоприемника</a></li>
+
+                    <li><a class="third_lev" data-section_id="15579" href="#">Щитки панели
+                        приборов</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15580">Сиденья</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15581" href="#">Защелки сидень</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15582" href="#">Облицовки передних
+                        сидений</a></li>
+
+                    <li><a class="third_lev" data-section_id="15583" href="#">Ручки сиденья</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15584">Двигатель</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15585">Система
+                охлаждения</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15586" href="#">Радиаторы
+                        охлаждения</a></li>
+
+                    <li><a class="third_lev" data-section_id="15587" href="#">Водяные насосы
+                        (помпы)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15588" href="#">Термостаты</a></li>
+
+                    <li><a class="third_lev" data-section_id="15589" href="#">Патрубки радиатора
+                        охлаждения</a></li>
+
+                    <li><a class="third_lev" data-section_id="15590" href="#">Ремни привода
+                        генератора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15591" href="#">Вентилятор
+                        радиатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15592" href="#">Диффузоры</a></li>
+
+                    <li><a class="third_lev" data-section_id="15593" href="#">Датчики включения
+                        вентилятора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15594" href="#">Датчики
+                        температуры</a></li>
+
+                    <li><a class="third_lev" data-section_id="15595" href="#">ДПКВ (Датчики
+                        положения коленчатого вала)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15596" href="#">Бачки
+                        расширительные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15597" href="#">Пробки расширительного
+                        бачка (крышки)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15598" href="#">Шкивы помпы (шкив
+                        водяного насоса)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15906" href="#">Хомуты патрубков
+                        радиаторов охлаждения</a></li>
+
+                    <li><a class="third_lev" data-section_id="15914" href="#">Крышки радиатора</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15599">Система
+                питания</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15600" href="#">Электробензонасосы</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15601" href="#">Тросы ручного
+                        управления карбюратором</a></li>
+
+                    <li><a class="third_lev" data-section_id="15602" href="#">Насосы топливные
+                        механические</a></li>
+
+                    <li><a class="third_lev" data-section_id="15603" href="#">РХХ (Регуляторы
+                        холостого хода)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15604" href="#">ДПДЗ (Датчики
+                        положения дроссельной заслонки)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15605" href="#">Фильтры воздушные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15606" href="#">Фильтры топливные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15607" href="#">Прокладки
+                        коллектора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15608" href="#">Тросы привода
+                        акселератора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15609" href="#">Датчики уровня
+                        топлива</a></li>
+
+                    <li><a class="third_lev" data-section_id="15610" href="#">Прокладки
+                        карбюратора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15611" href="#">Прокладки бензинового
+                        насоса</a></li>
+
+                    <li><a class="third_lev" data-section_id="15612" href="#">ДМРВ (Датчики
+                        массового расхода воздуха)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15613" href="#">Датчики абсолютного
+                        давления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15614" href="#">Шланги вентиляции
+                        картера (патрубоки сапуна)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15615" href="#">Толкатели насоса
+                        топливного (штоки бензонасоса)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15616" href="#">Заборники холодного
+                        воздуха</a></li>
+
+                    <li><a class="third_lev" data-section_id="15617" href="#">Корпусы воздушного
+                        фильтра</a></li>
+
+                    <li><a class="third_lev" data-section_id="15994" href="#">Клапана
+                        электромагнитные</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15618">Двигатель</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15619" href="#">Ролик натяжной</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15620" href="#">Клапана ГРМ</a></li>
+
+                    <li><a class="third_lev" data-section_id="15621" href="#">Ремни ГРМ</a></li>
+
+                    <li><a class="third_lev" data-section_id="15622" href="#">РХХ (Регуляторы
+                        холостого хода)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15623" href="#">Прокладки ГБЦ</a></li>
+
+                    <li><a class="third_lev" data-section_id="15624" href="#">Фильтры масляные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15625" href="#">Цепи ГРМ</a></li>
+
+                    <li><a class="third_lev" data-section_id="15626" href="#">Элементы фильтрующие
+                        очистки масла</a></li>
+
+                    <li><a class="third_lev" data-section_id="15627" href="#">Ролик опорный</a></li>
+
+                    <li><a class="third_lev" data-section_id="15628" href="#">ДПКВ (Датчики
+                        положения коленчатого вала)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15629" href="#">Прокладки клапанной
+                        крышки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15630" href="#">Прокладки
+                        коллектора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15631" href="#">Вкладыши коренные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15632" href="#">Вкладыши шатунные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15633" href="#">Шайбы упорные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15634" href="#">Башмаки натяжителя
+                        цепи</a></li>
+
+                    <li><a class="third_lev" data-section_id="15635" href="#">Комплект прокладок</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15636" href="#">Ремни привода
+                        кондиционера</a></li>
+
+                    <li><a class="third_lev" data-section_id="15637" href="#">Датчик детонации</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15638" href="#">Картеры масляные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15639" href="#">Валы
+                        распределительные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15640" href="#">Валы привода масляного
+                        насоса</a></li>
+
+                    <li><a class="third_lev" data-section_id="15641" href="#">Шестерни привода
+                        маслонасоса</a></li>
+
+                    <li><a class="third_lev" data-section_id="15642" href="#">Втулки клапана</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15643" href="#">Маховики</a></li>
+
+                    <li><a class="third_lev" data-section_id="15644" href="#">Кольца поршневые</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15645" href="#">Палецы поршневые</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15646" href="#">Шкивы коленвала</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15647" href="#">Прокладки ресивера</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15648" href="#">Кожухи ГРМ</a></li>
+
+                    <li><a class="third_lev" data-section_id="15649" href="#">Успокоители цепи</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15915" href="#">Крышки маслозаливной
+                        горловины</a></li>
+
+                    <li><a class="third_lev" data-section_id="15979" href="#">Сальники коленвала</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16017" href="#">Ремонтный комплект
+                        карбюратора</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15650">Блок цилиндров и
+                головка блока</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15651" href="#">Прокладки ГБЦ</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15652">Подвеска
+                двигателя</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15653" href="#">Подушки двигателя</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15654" href="#">Подушки КПП</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15655">Система выпуска
+                отработанных газов</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15656" href="#">Прокладки приемной
+                        трубы глушителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15657" href="#">Крепления
+                        глушителя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15978" href="#">Ремонтные комплекты
+                        выхлопной системы</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15658">Система
+                управления двигателем электронная</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15659" href="#">ДПРВ (Датчики
+                        положения распределительного вала)</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15660">Система
+                смазки</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15661" href="#">ДПКВ (Датчики
+                        положения коленчатого вала)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15662" href="#">Насосы масляные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15966" href="#">Щупы масляные</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15663">Трансмиссия</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15664">Передача
+                карданная</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15665" href="#">ШРУСы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15666" href="#">Крестовины карданного
+                        вала</a></li>
+
+                    <li><a class="third_lev" data-section_id="15667" href="#">Пыльники ШРУС
+                        ремкомплекты</a></li>
+
+                    <li><a class="third_lev" data-section_id="15668" href="#">Защита пыльника
+                        ШРУС</a></li>
+
+                    <li><a class="third_lev" data-section_id="15669" href="#">Хомуты ШРУС</a></li>
+
+                    <li><a class="third_lev" data-section_id="15670" href="#">Опоры карданного
+                        вала</a></li>
+
+                    <li><a class="third_lev" data-section_id="15986" href="#">Трехшиповики ШРУСа</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16026" href="#">Приводы колеса
+                        (полуоси)</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15671">Сцепление</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15672" href="#">Диски сцепления</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15673" href="#">Цилиндры рабочего
+                        сцепления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15674" href="#">Цилиндры главного
+                        сцепления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15675" href="#">Тросы привода
+                        сцепления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15676" href="#">Комплекты для ремонта
+                        диска сцепления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15677" href="#">Шланги сцепления</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15678" href="#">Накладки диска
+                        сцепления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15679" href="#">Вилки сцепления</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15680" href="#">Бачки сцепления</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15681" href="#">Муфты
+                        синхронизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15682" href="#">Крышки бачка
+                        сцепления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15916" href="#">Подшипники
+                        выжимные</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15683">Мост передний</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15684" href="#">Оси сателлитов</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15685">Мост задний</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15686" href="#">Полуоси</a></li>
+
+                    <li><a class="third_lev" data-section_id="15687" href="#">Подшипники полуоси</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15688" href="#">Втулки распорные
+                        редуктора заднего моста</a></li>
+
+                    <li><a class="third_lev" data-section_id="15980" href="#">Сальники полуоси</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15981" href="#">Сальники редуктора</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15998" href="#">Кольца запорные
+                        полуоси</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15689">Коробка
+                передач</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15690" href="#">Датчики скорости</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15691" href="#">Муфты эластичные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15692" href="#">Муфты
+                        синхронизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15693" href="#">Выключатели света
+                        заднего хода</a></li>
+
+                    <li><a class="third_lev" data-section_id="15694" href="#">Шестерни передач</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15695" href="#">Ручки рычага КПП</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15696" href="#">Шарниры тяги привода
+                        КПП (Карданчики кулисы)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15697" href="#">Блокирующие кольца
+                        синхронизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15698" href="#">Рамки чехла рычага
+                        КПП</a></li>
+
+                    <li><a class="third_lev" data-section_id="15699" href="#">Подушки КПП</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15700">Ходовая часть</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15701">Подвеска</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15702" href="#">Шаровые опоры</a></li>
+
+                    <li><a class="third_lev" data-section_id="15703" href="#">Амортизаторы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15704" href="#">Пружины подвески</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15705" href="#">Втулки реактивных
+                        штанг</a></li>
+
+                    <li><a class="third_lev" data-section_id="15706" href="#">Штанги реактивные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15707" href="#">Кронштейны растяжки
+                        (краб)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15708" href="#">Опоры стойки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15709" href="#">Стойки
+                        стабилизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15710" href="#">Рычаги передней
+                        подвески</a></li>
+
+                    <li><a class="third_lev" data-section_id="15711" href="#">Втулки
+                        стабилизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15712" href="#">Сайлентблоки
+                        рычага</a></li>
+
+                    <li><a class="third_lev" data-section_id="15713" href="#">Рычаги маятниковые</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15714" href="#">Стабилизаторы
+                        поперечной устойчивости</a></li>
+
+                    <li><a class="third_lev" data-section_id="15715" href="#">Втулки
+                        амортизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15716" href="#">Сайлентблоки задней
+                        балки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15717" href="#">Сайлентблоки
+                        ресоры</a></li>
+
+                    <li><a class="third_lev" data-section_id="15718" href="#">Обоймы шаровые опоры
+                        рычага</a></li>
+
+                    <li><a class="third_lev" data-section_id="15719" href="#">Буфер сжатия хода
+                        амортизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15720" href="#">Пыльники
+                        амортизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15721" href="#">Крышки опоры верхней
+                        стойки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15722" href="#">Колпаки ступицы
+                        (заглушки)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15723" href="#">Прокладки пружины
+                        амортизатора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15907" href="#">Кронштейны
+                        амортизатора</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15724">Ось
+                передняя/задняя</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15725" href="#">Подшипники ступицы</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15726" href="#">Наконечники рулевых
+                        тяг</a></li>
+
+                    <li><a class="third_lev" data-section_id="15727" href="#">Тяги рулевой
+                        трапеции</a></li>
+
+                    <li><a class="third_lev" data-section_id="15728" href="#">Пружины подвески</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15729" href="#">Ступицы колес</a></li>
+
+                    <li><a class="third_lev" data-section_id="15730" href="#">Штанги реактивные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15982" href="#">Сальники ступицы</a>
+                    </li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15731">Механизмы управления</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15732">Тормоза
+                передние</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15733" href="#">Диски тормозные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15734" href="#">Колодки дискового
+                        тормоза</a></li>
+
+                    <li><a class="third_lev" data-section_id="15735" href="#">Шланги переднего
+                        тормоза</a></li>
+
+                    <li><a class="third_lev" data-section_id="15736" href="#">Ступицы колес</a></li>
+
+                    <li><a class="third_lev" data-section_id="15737" href="#">Цилиндр главный
+                        тормозной</a></li>
+
+                    <li><a class="third_lev" data-section_id="15738" href="#">Цилиндры переднего
+                        тормоза</a></li>
+
+                    <li><a class="third_lev" data-section_id="15739" href="#">Вакуумные усилители
+                        тормозов</a></li>
+
+                    <li><a class="third_lev" data-section_id="15740" href="#">Бачки тормозные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15741" href="#">Поплавки тормозные
+                        (крышки бачка тормозного цилиндра)</a></li>
+
+                    <li><a class="third_lev" data-section_id="16007" href="#">Пальцы направляющие
+                        суппорта</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15742">Тормоза
+                задние</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15743" href="#">Цилиндры заднего
+                        тормоза</a></li>
+
+                    <li><a class="third_lev" data-section_id="15744" href="#">Тросы ручного
+                        тормоза</a></li>
+
+                    <li><a class="third_lev" data-section_id="15745" href="#">Колодки тормозные
+                        задние</a></li>
+
+                    <li><a class="third_lev" data-section_id="15746" href="#">Тормозные барабаны</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15747" href="#">Шланги заднего
+                        тормоза</a></li>
+
+                    <li><a class="third_lev" data-section_id="15748" href="#">Рычаги ручного
+                        тормоза</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15749">Управление
+                рулевое</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15750" href="#">Рычаги маятниковые</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15751" href="#">Валы рулевого
+                        управления</a></li>
+
+                    <li><a class="third_lev" data-section_id="15752" href="#">Чехлы рулевой
+                        рейки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15753" href="#">Рулевые колеса
+                        (рули)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15754" href="#">Кожухи руля</a></li>
+
+                    <li><a class="third_lev" data-section_id="15755" href="#">Механизмы рулевые</a>
+                    </li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15756">Электрооборудование</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15757">Стартеры и
+                комплектующие</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15758" href="#">Стартеры</a></li>
+
+                    <li><a class="third_lev" data-section_id="15759" href="#">Втягивающие реле
+                        стартера</a></li>
+
+                    <li><a class="third_lev" data-section_id="15760" href="#">Комплекты шестеренок
+                        редуктора стартера</a></li>
+
+                    <li><a class="third_lev" data-section_id="15761" href="#">Крышки передние
+                        стартера</a></li>
+
+                    <li><a class="third_lev" data-section_id="15762" href="#">Приводы стартера</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15763" href="#">Щеточные узлы стартера
+                        (в сборе)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15764" href="#">Якори стартера</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15765" href="#">Втулки стартера</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15766">Система
+                зажигания</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15767" href="#">Распределители
+                        зажигания</a></li>
+
+                    <li><a class="third_lev" data-section_id="15768" href="#">Крышки распределителя
+                        зажигания</a></li>
+
+                    <li><a class="third_lev" data-section_id="15769" href="#">Катушки зажигания</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15770" href="#">Замки зажигания</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15771" href="#">Коммутаторы
+                        зажигания</a></li>
+
+                    <li><a class="third_lev" data-section_id="15772" href="#">Провода
+                        высоковольтные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15773" href="#">Свечи зажигания</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15774" href="#">Наконечники свечей
+                        зажигания</a></li>
+
+                    <li><a class="third_lev" data-section_id="15775" href="#">Контактные группы</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15776" href="#">Бегунки распределителя
+                        зажигания</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15777">Электрооборудование</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15778" href="#">Подрулевые
+                        переключатели</a></li>
+
+                    <li><a class="third_lev" data-section_id="15779" href="#">Регуляторы
+                        напряжения</a></li>
+
+                    <li><a class="third_lev" data-section_id="15780" href="#">Диодные мосты</a></li>
+
+                    <li><a class="third_lev" data-section_id="15782" href="#">Датчики
+                        температуры</a></li>
+
+                    <li><a class="third_lev" data-section_id="15783" href="#">ДПРВ (Датчики
+                        положения распределительного вала)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15784" href="#">Датчики Холла</a></li>
+
+                    <li><a class="third_lev" data-section_id="15908" href="#">Аккумуляторы для
+                        легковых автомобилей</a></li>
+
+                    <li><a class="third_lev" data-section_id="15913" href="#">Сигналы звуковые</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15785">Приборы и
+                датчики</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15786" href="#">РХХ (Регуляторы
+                        холостого хода)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15787" href="#">ДПРВ (Датчики
+                        положения распределительного вала)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15788" href="#">Датчики скорости</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15789" href="#">Датчики давления
+                        масла</a></li>
+
+                    <li><a class="third_lev" data-section_id="15790" href="#">Датчики детонации</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15791" href="#">ДМРВ (Датчики
+                        массового расхода воздуха)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15792" href="#">Датчики Холла</a></li>
+
+                    <li><a class="third_lev" data-section_id="15793" href="#">Выключатели света
+                        заднего хода</a></li>
+
+                    <li><a class="third_lev" data-section_id="15794" href="#">Выключатели
+                        стоп-сигнала</a></li>
+
+                    <li><a class="third_lev" data-section_id="15795" href="#">Тросы привода
+                        спидометра</a></li>
+
+                    <li><a class="third_lev" data-section_id="15796" href="#">Индикаторы
+                        напряжения/частоты вращения</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15797">Выключатели</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15798" href="#">Кнопки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15799" href="#">Клавиши</a></li>
+
+                    <li><a class="third_lev" data-section_id="15800" href="#">Рамки вклчателя
+                        (гнездо переключателя)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15801" href="#">Выключатели света
+                        заднего хода</a></li>
+
+                    <li><a class="third_lev" data-section_id="15802" href="#">Выключатели
+                        стоп-сигнала</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15803">Освещение
+                наружное и внутреннее</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15804" href="#">Фары, рассеиватели
+                        (стекло), указатели поворотов</a></li>
+
+                    <li><a class="third_lev" data-section_id="15805" href="#">Фонари задние,
+                        рассеиватели (стекло)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15806" href="#">Светодиодные платы</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15807" href="#">Противотуманные
+                        фары</a></li>
+
+                    <li><a class="third_lev" data-section_id="15808" href="#">Плафоны освещения
+                        салона</a></li>
+
+                    <li><a class="third_lev" data-section_id="15809" href="#">Лампы накаливания
+                        (сигнальные)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15810" href="#">Лампы головного
+                        света</a></li>
+
+                    <li><a class="third_lev" data-section_id="15811" href="#">Накладки фар</a></li>
+
+                    <li><a class="third_lev" data-section_id="15812" href="#">Облицовки
+                        противотуманных фар</a></li>
+
+                    <li><a class="third_lev" data-section_id="15964" href="#">Дополнительные стоп
+                        сигналы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15965" href="#">Оптические
+                        элементы</a></li>
+
+                    <li><a class="third_lev" data-section_id="16018" href="#">Освещение номерного
+                        знака</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15813">Блок
+                монтажный</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15814" href="#">Блок монтажный</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15815" href="#">Предохранители плоские
+                        евро</a></li>
+
+                    <li><a class="third_lev" data-section_id="15816" href="#">Предохранители плоские
+                        мини</a></li>
+
+                    <li><a class="third_lev" data-section_id="15817" href="#">Предохранители
+                        цилиндрические</a></li>
+
+                    <li><a class="third_lev" data-section_id="15926" href="#">Предохранители плоские
+                        супер мини</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15818">Реле</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15819" href="#">Реле
+                        (универсальное)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15820" href="#">Реле указателей
+                        поворота (Прерыватели указателей поворота)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15821" href="#">Реле дворников
+                        (Прерыватели стеклоочистителя)</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15822">Генератор</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15849" href="#">Генераторы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15823" href="#">Ремни привода
+                        генератора</a></li>
+
+                    <li><a class="third_lev" data-section_id="15824" href="#">Щетки генератора
+                        (Щёточные узлы генератора)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15825" href="#">Подшипники
+                        генератора</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15826">Дополнительное
+                оборудование</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15827" href="#">Конверторы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15828" href="#">Приборы для проверки
+                        исправности регуляторов напряжения</a></li>
+
+                    <li><a class="third_lev" data-section_id="15829" href="#">Приборы для проверки
+                        исправности коммутаторов</a></li>
+
+                    <li><a class="third_lev" data-section_id="15904" href="#">Клемы (наконечники
+                        проводов)</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15999">Центральный
+                замк</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16000" href="#">Приводы центрального
+                        замка (соленоиды)</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15830">Автоаксессуары</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15831">Автомобильные
+                принадлежности</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15832" href="#">Домкраты</a></li>
+
+                    <li><a class="third_lev" data-section_id="15833" href="#">Насосы автомобильные
+                        ножные/ручные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15834" href="#">Шланги, рукава</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15909" href="#">Рамки номерного
+                        знака</a></li>
+
+                    <li><a class="third_lev" data-section_id="15912" href="#">Насосы
+                        топливоперекачивающие</a></li>
+
+                    <li><a class="third_lev" data-section_id="15917" href="#">Брызговики</a></li>
+
+                    <li><a class="third_lev" data-section_id="15918" href="#">Полироли для
+                        торпедо</a></li>
+
+                    <li><a class="third_lev" data-section_id="15963" href="#">Метизы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15919" href="#">Очистители смолы
+                        битума</a></li>
+
+                    <li><a class="third_lev" data-section_id="15920" href="#">Очистители для чистки
+                        ткани и ковров</a></li>
+
+                    <li><a class="third_lev" data-section_id="15921" href="#">Шампуни для
+                        бесконтактной мойки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15922" href="#">Полироли для
+                        кузова</a></li>
+
+                    <li><a class="third_lev" data-section_id="15923" href="#">Автомобильные
+                        освежители воздуха</a></li>
+
+                    <li><a class="third_lev" data-section_id="15997" href="#">Щетки и скребки</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16019" href="#">Компрессоры для
+                        накачки колес</a></li>
+
+                    <li><a class="third_lev" data-section_id="16020" href="#">Тросы
+                        буксировочные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16021" href="#">Ключи колесные и
+                        свечные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16022" href="#">Зарядные устройства
+                        АКБ авто</a></li>
+
+                    <li><a class="third_lev" data-section_id="16023" href="#">Пусковые провода</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16030" href="#">Шторки
+                        солнцезащитные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16035" href="#">Знаки аварийной
+                        остановки</a></li>
+
+                    <li><a class="third_lev" data-section_id="16036" href="#">Жилеты
+                        светоотражающие</a></li>
+
+                    <li><a class="third_lev" data-section_id="16072" href="#">Стяжные ремни</a></li>
+
+                    <li><a class="third_lev" data-section_id="16073" href="#">Монометры</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15910">Аккумуляторы
+                (АКБ)</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15911" href="#">Аккумуляторы для
+                        легковых автомобилей</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15927">Автокосметика</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15928" href="#">Полироли для
+                        торпедо</a></li>
+
+                    <li><a class="third_lev" data-section_id="15929" href="#">Полироли для
+                        кузова</a></li>
+
+                    <li><a class="third_lev" data-section_id="15988" href="#">Салфетки, тряпки и
+                        губки для автомобиля</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15930">Автохимия</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15931" href="#">Очистители для ткани и
+                        ковров</a></li>
+
+                    <li><a class="third_lev" data-section_id="15932" href="#">Очистители смолы
+                        битума</a></li>
+
+                    <li><a class="third_lev" data-section_id="15933" href="#">Шампуни для
+                        бесконтактной мойки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15934" href="#">Очистители для
+                        кондиционеров</a></li>
+
+                    <li><a class="third_lev" data-section_id="15935" href="#">Очистители для
+                        двигателя</a></li>
+
+                    <li><a class="third_lev" data-section_id="15936" href="#">Очистители дисков</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15937" href="#">Очистители шин</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15938" href="#">Очистители натуральной
+                        и искустенной кожи</a></li>
+
+                    <li><a class="third_lev" data-section_id="15939" href="#">Очистители
+                        пластика</a></li>
+
+                    <li><a class="third_lev" data-section_id="15940" href="#">Проникающие смазки</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15967" href="#">Очистители следов от
+                        насекомых</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15941">Автомобильные
+                освежители воздуха</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15942" href="#">Ароматизаторы
+                        жидкие</a></li>
+
+                    <li><a class="third_lev" data-section_id="15943" href="#">Ароматизаторы
+                        гелевые</a></li>
+
+                    <li><a class="third_lev" data-section_id="15944" href="#">Ароматизаторы
+                        сухие</a></li>
+
+                    <li><a class="third_lev" data-section_id="16001" href="#">Нейтрализаторы
+                        запаха</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15835">Жидкости</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15836">Смазочные
+                материалы</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15837" href="#">Моторные масла</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15838" href="#">Консистентные
+                        смазки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15839" href="#">Мото масла</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15840">Технологические
+                жидкости</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15841" href="#">Трансмиссионные
+                        жидкости (масла)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15842" href="#">Антифризы (тосол)</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15843" href="#">Тормозные жидкости</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15844" href="#">Жидкости
+                        гидроусилителя руля (ГУР)</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15845">Герметики</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15846" href="#">Герметики</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#"
+                               data-section_id="15847">Стеклоомыватели</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15848" href="#">Стеклоомыватели</a>
+                    </li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub"><a href="#" class="first_lev" data-section_id="15850">Крепежные изделия</a>
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15851">Хомуты
+                червячные</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15852" href="#">Хомуты червячные
+                        W1</a></li>
+
+                    <li><a class="third_lev" data-section_id="15853" href="#">Хомуты червячные
+                        W2</a></li>
+
+                    <li><a class="third_lev" data-section_id="15854" href="#">Хомуты червячные
+                        перфорированные W1</a></li>
+
+                    <li><a class="third_lev" data-section_id="15855" href="#">Хомуты червячные W1 с
+                        ключом «бабочка»</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15856">Хомуты
+                силовые</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15857" href="#">Хомуты силовые
+                        оцинкованные W1</a></li>
+
+                    <li><a class="third_lev" data-section_id="15925" href="#">Хомуты силовые из
+                        нержавеющей стали W2</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15858">Хомуты
+                трубные</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15859" href="#">Хомуты трубные с
+                        гайкой</a></li>
+
+                    <li><a class="third_lev" data-section_id="15860" href="#">Хомуты трубные с
+                        комбинированной гайкой М8/М10</a></li>
+
+                    <li><a class="third_lev" data-section_id="15861" href="#">Винт-шурупы
+                        (шпильки)</a></li>
+
+                    <li><a class="third_lev" data-section_id="16008" href="#">Хомуты трубные с
+                        саморезом</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15862">Кабельные стяжки
+                металлические</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15863" href="#">Кабельные стяжки
+                        металлические</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15864">Кабельные
+                стяжки</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15865" href="#">Кабельные стяжки
+                        белые</a></li>
+
+                    <li><a class="third_lev" data-section_id="15866" href="#">Кабельные стяжки
+                        черные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15867" href="#">Кабельные стяжки с
+                        креплением</a></li>
+
+                    <li><a class="third_lev" data-section_id="15868" href="#">Кабельные стяжки с
+                        маркером</a></li>
+
+                    <li><a class="third_lev" data-section_id="15869" href="#">Кабельные стяжки с
+                        крепежным пистоном</a></li>
+
+                    <li><a class="third_lev" data-section_id="15870" href="#">Кабельные стяжки
+                        многоразового использования</a></li>
+
+                    <li><a class="third_lev" data-section_id="15871" href="#">Кабельные стяжки
+                        шариковые разъемные</a></li>
+
+                    <li><a class="third_lev" data-section_id="15924" href="#">Кабельные стяжки с
+                        низким профилем замка</a></li>
+
+                    <li><a class="third_lev" data-section_id="16009" href="#">Кабельные стяжки с
+                        усиленным креплением</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15872">Площадки для
+                стяжки</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15873" href="#">Площадки для стяжек
+                        под шуруп</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15874">Кабельная
+                клипса</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15875" href="#">Кабельные клипсы
+                        (скобы) круглые</a></li>
+
+                    <li><a class="third_lev" data-section_id="15876" href="#">Кабельные клипсы
+                        (скобы) плоские</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15877">Клеммные
+                колодки</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15878" href="#">Клеммные колодки</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15879">Изолента</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15880" href="#">Изолента ПВХ
+                        (синяя)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15881" href="#">Изолента ПВХ
+                        (черная)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15882" href="#">Изолента ПВХ
+                        (белая)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15883" href="#">Изолента ПВХ
+                        (желто-зеленая)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15884" href="#">Изолента ПВХ (набор 6
+                        шт.)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15975" href="#">Изолента ПВХ
+                        (желтая)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15976" href="#">Изолента ПВХ
+                        (зеленая)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15977" href="#">Изолента ПВХ
+                        (красная)</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15885">Зажимы для
+                троса</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15886" href="#">Зажимы для троса
+                        одинарные SIMPLEX</a></li>
+
+                    <li><a class="third_lev" data-section_id="15887" href="#">Зажимы для троса
+                        двойные DUPLEX</a></li>
+
+                    <li><a class="third_lev" data-section_id="15888" href="#">Зажимы для троса DIN
+                        741</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15889">Карабины</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15890" href="#">Карабины пожарные DIN
+                        5299C</a></li>
+
+                    <li><a class="third_lev" data-section_id="15891" href="#">Карабины пожарные с
+                        замком DIN 5299D</a></li>
+
+                    <li><a class="third_lev" data-section_id="15892" href="#">Карабины винтовые</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15893">Коуши</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15894" href="#">Коуши DIN 6899B</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15895">Талрепы</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15896" href="#">Талрепы крюк-колько
+                        DIN 1480</a></li>
+
+                    <li><a class="third_lev" data-section_id="15968" href="#">Талрепы крюк-крюк DIN
+                        1480</a></li>
+
+                    <li><a class="third_lev" data-section_id="15969" href="#">Талрепы кольцо-кольцо
+                        DIN 1480</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15897">Тросы
+                стальные</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15898" href="#">Тросы стальные 6x7+FC
+                        DIN 3055</a></li>
+
+                    <li><a class="third_lev" data-section_id="15899" href="#">Тросы стальные DIN
+                        3060 (6x19+FC)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15900" href="#">Тросы стальные в ПВХ
+                        оплетке DIN 3055 (6x7+FC)</a></li>
+
+                    <li><a class="third_lev" data-section_id="16010" href="#">Тросы стальные DIN
+                        3052</a></li>
+
+                    <li><a class="third_lev" data-section_id="16011" href="#">Тросы стальные DIN
+                        3053</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15901">Цепи</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15902" href="#">Цепь короткозвенная
+                        DIN 5685A</a></li>
+
+                    <li><a class="third_lev" data-section_id="15903" href="#">Цепь длиннозвенная DIN
+                        5685C</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15970">Крюки
+                S-образные</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15971" href="#">Крюки S-образные</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#"
+                               data-section_id="15972">Рым-болты/гайки</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15973" href="#">Болты с кольцом</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15974" href="#">Гайки с кольцом</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15983">Термоусадочные
+                трубки</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15984" href="#">Термоусадочные трубки
+                        (пачки)</a></li>
+
+                    <li><a class="third_lev" data-section_id="15985" href="#">Термоусадочные трубки
+                        (бухты)</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="16012">Дюбель-хомуты</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16013" href="#">Дюбель-хомуты
+                        круглые</a></li>
+
+                    <li><a class="third_lev" data-section_id="16014" href="#">Дюбель-хомуты
+                        плоские</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="16015">Хомуты RUBBER</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16016" href="#">Хомуты RUBBER</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="16047">Обоймы для труб и
+                кабеля</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16048" href="#">Обоймы для труб и
+                        кабеля</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="16076">Дюбеля,
+                анкера</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16077" href="#">Быстрый монтаж</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="16078">Клипсы для гофры
+                U-тип</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16079" href="#">Клипсы для гофры
+                        серые</a></li>
+
+                    <li><a class="third_lev" data-section_id="16080" href="#">Клипсы для гофры
+                        черные</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="sub">
+        <a href="#" class="first_lev" data-section_id="15945">Инструменты</a>
+
+        <ul class="drop-one">
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15946">Автомобильные
+                инструменты</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15947" href="#">Насадки торцевые</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15948" href="#">Воротки /
+                        Ключ-трещотка</a></li>
+
+                    <li><a class="third_lev" data-section_id="15949" href="#">Переходники /
+                        Удлинители</a></li>
+
+                    <li><a class="third_lev" data-section_id="15950" href="#">Наборы насадок
+                        торцевых</a></li>
+
+                    <li><a class="third_lev" data-section_id="15951" href="#">Съемники стопорных
+                        колец</a></li>
+
+                    <li><a class="third_lev" data-section_id="16002" href="#">Наборы гаечных
+                        ключей</a></li>
+
+                    <li><a class="third_lev" data-section_id="16003" href="#">Ключи
+                        рожково-накидные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16004" href="#">Ключи рожковые</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16005" href="#">Ключи накидные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16006" href="#">Ключи торцевые</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16040" href="#">Ключи рожково-накидные
+                        трещеточные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16041" href="#">Ключи колесные и
+                        свечные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16074" href="#">Ключи рожково-накидные
+                        глубокие</a></li>
+
+                    <li><a class="third_lev" data-section_id="16044" href="#">Ключи для снятия
+                        масляных фильтров</a></li>
+
+                    <li><a class="third_lev" data-section_id="16075" href="#">Ключи разрезные</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15952">Столярно-слесарные
+                инструменты</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15953" href="#">Отвертки</a></li>
+
+                    <li><a class="third_lev" data-section_id="15954" href="#">Ножи</a></li>
+
+                    <li><a class="third_lev" data-section_id="15955" href="#">Плоскогубцы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15956" href="#">Бокорезы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15957" href="#">Длинногубцы</a></li>
+
+                    <li><a class="third_lev" data-section_id="15958" href="#">Ключи Г- образные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15987" href="#">Ножницы по металлу</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16031" href="#">Щипцы для кабеля</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16032" href="#">Клещи трубные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16037" href="#">Наборы губцевого
+                        инструмента</a></li>
+
+                    <li><a class="third_lev" data-section_id="16057" href="#">Ключи трубные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16045" href="#">Ножовки/Пилы</a></li>
+
+                    <li><a class="third_lev" data-section_id="16046" href="#">Ключи разводные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16050" href="#">Стамески</a></li>
+
+                    <li><a class="third_lev" data-section_id="16051" href="#">Струбцины</a></li>
+
+                    <li><a class="third_lev" data-section_id="16052" href="#">Молотки</a></li>
+
+                    <li><a class="third_lev" data-section_id="16053" href="#">Кувалды</a></li>
+
+                    <li><a class="third_lev" data-section_id="16054" href="#">Топоры</a></li>
+
+                    <li><a class="third_lev" data-section_id="16055" href="#">Колуны</a></li>
+
+                    <li><a class="third_lev" data-section_id="16060" href="#">Ящики и
+                        органайзеры</a></li>
+
+                    <li><a class="third_lev" data-section_id="16081" href="#">Биты</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15959">Измерительные и
+                разметочные инструменты</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15960" href="#">Рулетки</a></li>
+
+                    <li><a class="third_lev" data-section_id="16024" href="#">Линейки</a></li>
+
+                    <li><a class="third_lev" data-section_id="16025" href="#">Угольники</a></li>
+
+                    <li><a class="third_lev" data-section_id="16034" href="#">Уровни</a></li>
+
+                    <li><a class="third_lev" data-section_id="16039" href="#">Карандаши</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15961">Малярно-отделочный
+                инструменты</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15962" href="#">Ножи и лезвия</a></li>
+
+                    <li><a class="third_lev" data-section_id="15989" href="#">Миксеры для красок и
+                        сухих смесей</a></li>
+
+                    <li><a class="third_lev" data-section_id="15992" href="#">Валики малярные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="15993" href="#">Кисти малярные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16049" href="#">Ручки для валиков</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16070" href="#">Кюветки</a></li>
+
+                    <li><a class="third_lev" data-section_id="16071" href="#">Кюветки</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15990">Крепежный
+                инструмент</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15991" href="#">Пистолеты для
+                        герметиков</a></li>
+
+                    <li><a class="third_lev" data-section_id="16033" href="#">Скобы для степлера</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16042" href="#">Заклепочники</a></li>
+
+                    <li><a class="third_lev" data-section_id="16043" href="#">Пистолеты для
+                        полиуретановой пены</a></li>
+
+                    <li><a class="third_lev" data-section_id="16056" href="#">Заклепки</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="15995">Спецодежда и
+                СИЗ</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="15996" href="#">Перчатки защитные</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16038" href="#">Очки защитные</a></li>
+
+                    <li><a class="third_lev" data-section_id="16061" href="#">Респираторы и
+                        фильтры</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="16027">Садовые
+                инструменты</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16028" href="#">Лески для триммера</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="sub"><a class="second_lev" href="#" data-section_id="16058">Режуще-сверлильные
+                и абразивные инструменты</a>
+                <ul>
+
+                    <li><a class="third_lev" data-section_id="16059" href="#">Сверла корончатые по
+                        бетону / удлинители для коронок</a></li>
+
+                    <li><a class="third_lev" data-section_id="16062" href="#">Буры по бетону (SDS
+                        PLUS)</a></li>
+
+                    <li><a class="third_lev" data-section_id="16063" href="#">Сверла по бетону</a>
+                    </li>
+
+                    <li><a class="third_lev" data-section_id="16064" href="#">Сверла по металлу
+                        Р6М5</a></li>
+
+                    <li><a class="third_lev" data-section_id="16065" href="#">Сверла по металлу Р6М5
+                        (удлиненные)</a></li>
+
+                    <li><a class="third_lev" data-section_id="16066" href="#">Наборы сверл по
+                        металлу</a></li>
+
+                    <li><a class="third_lev" data-section_id="16067" href="#">Сверла по стеклу и
+                        плитке</a></li>
+
+                    <li><a class="third_lev" data-section_id="16068" href="#">Сверла по дереву
+                        (спиральные)</a></li>
+
+                    <li><a class="third_lev" data-section_id="16069" href="#">Зубила (SDS PLUS)</a>
+                    </li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><a class="third_lev" data-section_id="16029" href="#">Рекламная продукция</a></li>
+
+    <li class="sub"><a class="second_lev" style="color:#1268b1;" href="#" data-section_id="news">Новинки</a>
+    </li>
+
+    <li class="sub"><a class="second_lev" style="color:#b13712;" href="#"
+                       data-section_id="extrabonus">ЭКСТРА-БОНУС</a></li>
+
+    <li class="sub"><a class="second_lev" style="color:#2b2b2b; font-weight:bold;" href="#"
+                       data-section_id="my_products">Мои товары</a></li>
+
+    <li class="sub"><a class="second_lev" style="color:#068800;" href="#"
+                       data-section_id="presents">Подарки</a></li>
+</ul>
+
+          </div>
+
+          <div class="resize-vert" data-grid="catalog-lever-vertical-cell-left">
+            <span data-grid="button-toggle"></span>
+          </div>
+
+          <div class="cat-filter" data-grid="catalog-row-bottom-cell-left">
+
+            <div class="CatalogBlockLeft_bottom__1yWrD">
+    <div class="CatalogFilter_filter__2jTLY">
+        <div class="CatalogFilter_header__1jF1U">
+            <div class="CatalogFilter_title__2Ka8P">
+                <span class="CatalogFilter_text__3iAM3">Фильтры</span>
+            </div>
+
+            <button class="CatalogFilter_reset__ZpoJM">
+                <span class="CatalogFilter_text__3iAM3">сбросить все</span>
+            </button>
+        </div>
+
+        <div class="CatalogFilter_body__17COT">
+            <div>
+                <ul class="catalog-section-filter-list">
+                    <li class="catalog-section-filter-list-item">
+                        <div class="catalog-filter-box">
+                            <div class="catalog-filter-title"><span
+                                    class="catalog-filter-title__text">Диаметр, мм</span>
+                            </div>
+                            <ul class="catalog-filter-selected-list">
+                                <li class="catalog-filter-selected-item"><span
+                                        class="catalog-filter-selected-link"><span
+                                        class="catalog-filter-selected-link__text">25.5.er</span>
+                                                </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="catalog-section-filter-list-item">
+                        <div class="catalog-filter-box">
+                            <div class="catalog-filter-title"><span
+                                    class="catalog-filter-title__text">Диаметр</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-section-filter-list-item">
+                        <div class="catalog-filter-box">
+                            <div class="catalog-filter-title active">
+                                <span class="catalog-filter-title__text">Производитель</span>
+                            </div>
+
+                            <ul class="catalog-filter-list">
+                                <li class="catalog-filter-item">
+                                                    <span class="catalog-filter-link">
+                                                        <span class="catalog-filter-link__text">25.5.er</span>
+                                                    </span>
+                                </li>
+
+                                <li class="catalog-filter-selected-item">
+                                                    <span class="catalog-filter-selected-link">
+                                                        <span class="catalog-filter-selected-link__text">28.er</span>
+                                                    </span>
+                                </li>
+
+                                <li class="catalog-filter-selected-item">
+                                                    <span class="catalog-filter-selected-link">
+                                                        <span class="catalog-filter-selected-link__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, laborum.</span>
+                                                    </span>
+                                </li>
+
+                                <li class="catalog-filter-selected-item">
+                                                    <span class="catalog-filter-selected-link">
+                                                        <span class="catalog-filter-selected-link__text">28.er</span>
+                                                    </span>
+                                </li>
+
+                                <li class="catalog-filter-selected-item">
+                                                    <span class="catalog-filter-selected-link">
+                                                        <span class="catalog-filter-selected-link__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores dolore fuga laudantium obcaecati rem rerum soluta sunt tempore vel!</span>
+                                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+          </div>
+
+          <div class="resize-horiz" data-grid="catalog-lever-horizontal">
+            <span data-grid="button-toggle"></span>
+          </div>
+        </aside>
+
+        <div class="main-holder" data-grid="catalog-cell-right">
+          <div class="catalog-container">
+            <div class="catalog-container__search">
+              <form action="#" class="search-form voicesearchContainer">
+    <div class="historyGmButton">История</div>
+
+    <button class="search_button">Искать</button>
+
+    <div class="input-row">
+        <input type="search" class="inpsearchgm1" placeholder="Введите поисковый запрос" />
+
+        <span class="close-inp clear_form" data-section_id="15510"></span>
+
+        <div class="srs__lang"></div>
+    </div>
+
+    <div class="drop-history deskgmhist" style="display:none;">
+        <ul>
+            <li>радиатора</li>
+            <li>Перчатки</li>
+            <li>Перчатки</li>
+            <li>радиатора</li>
+            <li>Радиатор отопителя</li>
+            <li>помпа</li>
+            <li>Амортизатор передний</li>
+            <li>Стартер ВАЗ 2101</li>
+            <li>Генератор ВАЗ 2110</li>
+            <li>Генератор ВАЗ</li>
+            <li>шрус наружный 1102</li>
+            <li>фильтр</li>
+            <li>фильтр</li>
+            <li>старт</li>
+            <li>старт</li>
+            <li>старт</li>
+            <li>Стартер Daewoo</li>
+            <li>Стартер</li>
+            <li>Стартер</li>
+            <li>Стартер</li>
+
+        </ul>
+    </div>
+
+    <div id="voiceSearchBtn" title="Нажми - говори - отпусти"></div>
+</form>
+            </div>
+
+            <div class="catalog-container__goods">
+              <div class="card-list">
+    <div class="card-item">
+        <div class="card-item__header">
+            <div class="card-item-photo">
+                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
+            </div>
+
+            <div class="card-item-status">
+                <div class="card-item-status__item">
+                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
                 </div>
 
-                <div class="resize-vert" data-grid="catalog-lever-vertical-cell-left">
-                    <span data-grid="button-toggle"></span>
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
                 </div>
 
-                <div class="cat-filter" data-grid="catalog-row-bottom-cell-left">
-
-                    
-
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
                 </div>
 
-                <div class="resize-horiz" data-grid="catalog-lever-horizontal">
-                    <span data-grid="button-toggle"></span>
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
                 </div>
-            </aside>
+            </div>
 
-            <div class="main-holder" data-grid="catalog-cell-right">
-                <div class="catalog-container">
+            <div class="card-item-title">
+                <span class="card-item-title__text">Экстра бонус 12 345</span>
+            </div>
 
-                    
+            <button class="card-item-favorite card-item-favorite_active">
+                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
+                </svg>
+            </button>
+        </div>
 
-                    
+        <div class="card-item__body">
+            <div class="card-item-name">
+                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
+            </div>
 
-                    
+            <div class="card-item-presence">
+                <!--<div class="available">-->
+                <!--<span class="available__ico">-->
+                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
+                <!--</svg>-->
+                <!--</span>-->
 
+                <!--<span class="available__text">В наличии</span>-->
+                <!--</div>-->
+
+                <div class="not-available">
+<span class="not-available__ico">
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
+      fill="#666666"/>
+</svg>
+</span>
+
+                    <span class="not-available__text">Дата поставки</span>
+
+                    <span class="not-available__date">21.06.19</span>
+                </div>
+            </div>
+
+            <div class="card-item-table">
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество в упаковке</span>
+
+                    <span class="card-item-table__value">2 шт</span>
                 </div>
 
-                <div class="resize-vert" data-grid="">
-                    <span data-grid="button-toggle"></span>
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Бонус за товар</span>
+
+                    <span class="card-item-table__value">+12 345</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество</span>
+
+                    <span class="card-item-table__value">
+<div class="quantity">
+<button class="quantity__btn" type="button">
+<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+<rect width="10" height="1.42857" rx="0.714286"/>
+</svg>
+</button>
+
+<input class="quantity__input" name="quantity" type="text" value="1"/>
+
+<button class="quantity__btn" type="button">
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
+<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+</svg>
+</button>
+</div>
+</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Цена</span>
+
+                    <span class="card-item-table__value">123 456 грн</span>
                 </div>
             </div>
         </div>
-    </main>
+
+        <div class="card-item__footer">
+            <button class="card-item-more">Подробнее</button>
+        </div>
+    </div>
+
+    <div class="card-item">
+        <div class="card-item__header">
+            <div class="card-item-photo">
+                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
+            </div>
+
+            <div class="card-item-status">
+                <div class="card-item-status__item">
+                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+            </div>
+
+            <div class="card-item-title">
+                <span class="card-item-title__text">Экстра бонус 12 345</span>
+            </div>
+
+            <button class="card-item-favorite">
+                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="card-item__body">
+            <div class="card-item-name">
+                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
+            </div>
+
+            <div class="card-item-presence">
+                <!--<div class="available">-->
+                <!--<span class="available__ico">-->
+                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
+                <!--</svg>-->
+                <!--</span>-->
+
+                <!--<span class="available__text">В наличии</span>-->
+                <!--</div>-->
+
+                <div class="not-available">
+<span class="not-available__ico">
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
+      fill="#666666"/>
+</svg>
+</span>
+
+                    <span class="not-available__text">Дата поставки</span>
+
+                    <span class="not-available__date">21.06.19</span>
+                </div>
+            </div>
+
+            <div class="card-item-table">
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество в упаковке</span>
+
+                    <span class="card-item-table__value">2 шт</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Бонус за товар</span>
+
+                    <span class="card-item-table__value">+12 345</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество</span>
+
+                    <span class="card-item-table__value">
+<div class="quantity">
+<button class="quantity__btn" type="button">
+<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+<rect width="10" height="1.42857" rx="0.714286"/>
+</svg>
+</button>
+
+<input class="quantity__input" name="quantity" type="text" value="1"/>
+
+<button class="quantity__btn" type="button">
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
+<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+</svg>
+</button>
+</div>
+</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Цена</span>
+
+                    <span class="card-item-table__value">123 456 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item__footer">
+            <button class="card-item-more">Подробнее</button>
+        </div>
+    </div>
+
+    <div class="card-item">
+        <div class="card-item__header">
+            <div class="card-item-photo">
+                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
+            </div>
+
+            <div class="card-item-status">
+                <div class="card-item-status__item">
+                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+            </div>
+
+            <div class="card-item-title">
+                <span class="card-item-title__text">Экстра бонус 12 345</span>
+            </div>
+
+            <button class="card-item-favorite">
+                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="card-item__body">
+            <div class="card-item-name">
+                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
+            </div>
+
+            <div class="card-item-presence">
+                <!--<div class="available">-->
+                <!--<span class="available__ico">-->
+                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
+                <!--</svg>-->
+                <!--</span>-->
+
+                <!--<span class="available__text">В наличии</span>-->
+                <!--</div>-->
+
+                <div class="not-available">
+<span class="not-available__ico">
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
+      fill="#666666"/>
+</svg>
+</span>
+
+                    <span class="not-available__text">Дата поставки</span>
+
+                    <span class="not-available__date">21.06.19</span>
+                </div>
+            </div>
+
+            <div class="card-item-table">
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество в упаковке</span>
+
+                    <span class="card-item-table__value">2 шт</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Бонус за товар</span>
+
+                    <span class="card-item-table__value">+12 345</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество</span>
+
+                    <span class="card-item-table__value">
+<div class="quantity">
+<button class="quantity__btn" type="button">
+<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+<rect width="10" height="1.42857" rx="0.714286"/>
+</svg>
+</button>
+
+<input class="quantity__input" name="quantity" type="text" value="1"/>
+
+<button class="quantity__btn" type="button">
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
+<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+</svg>
+</button>
+</div>
+</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Цена</span>
+
+                    <span class="card-item-table__value">123 456 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item__footer">
+            <button class="card-item-more">Подробнее</button>
+        </div>
+    </div>
+
+    <div class="card-item">
+        <div class="card-item__header">
+            <div class="card-item-photo">
+                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
+            </div>
+
+            <div class="card-item-status">
+                <div class="card-item-status__item">
+                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+            </div>
+
+            <div class="card-item-title">
+                <span class="card-item-title__text">Экстра бонус 12 345</span>
+            </div>
+
+            <button class="card-item-favorite">
+                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="card-item__body">
+            <div class="card-item-name">
+                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
+            </div>
+
+            <div class="card-item-presence">
+                <!--<div class="available">-->
+                <!--<span class="available__ico">-->
+                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
+                <!--</svg>-->
+                <!--</span>-->
+
+                <!--<span class="available__text">В наличии</span>-->
+                <!--</div>-->
+
+                <div class="not-available">
+<span class="not-available__ico">
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
+      fill="#666666"/>
+</svg>
+</span>
+
+                    <span class="not-available__text">Дата поставки</span>
+
+                    <span class="not-available__date">21.06.19</span>
+                </div>
+            </div>
+
+            <div class="card-item-table">
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество в упаковке</span>
+
+                    <span class="card-item-table__value">2 шт</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Бонус за товар</span>
+
+                    <span class="card-item-table__value">+12 345</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество</span>
+
+                    <span class="card-item-table__value">
+<div class="quantity">
+<button class="quantity__btn" type="button">
+<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+<rect width="10" height="1.42857" rx="0.714286"/>
+</svg>
+</button>
+
+<input class="quantity__input" name="quantity" type="text" value="1"/>
+
+<button class="quantity__btn" type="button">
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
+<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+</svg>
+</button>
+</div>
+</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Цена</span>
+
+                    <span class="card-item-table__value">123 456 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item__footer">
+            <button class="card-item-more">Подробнее</button>
+        </div>
+    </div>
+
+    <div class="card-item">
+        <div class="card-item__header">
+            <div class="card-item-photo">
+                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
+            </div>
+
+            <div class="card-item-status">
+                <div class="card-item-status__item">
+                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+            </div>
+
+            <div class="card-item-title">
+                <span class="card-item-title__text">Экстра бонус 12 345</span>
+            </div>
+
+            <button class="card-item-favorite">
+                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="card-item__body">
+            <div class="card-item-name">
+                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
+            </div>
+
+            <div class="card-item-presence">
+                <!--<div class="available">-->
+                <!--<span class="available__ico">-->
+                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
+                <!--</svg>-->
+                <!--</span>-->
+
+                <!--<span class="available__text">В наличии</span>-->
+                <!--</div>-->
+
+                <div class="not-available">
+<span class="not-available__ico">
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
+      fill="#666666"/>
+</svg>
+</span>
+
+                    <span class="not-available__text">Дата поставки</span>
+
+                    <span class="not-available__date">21.06.19</span>
+                </div>
+            </div>
+
+            <div class="card-item-table">
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество в упаковке</span>
+
+                    <span class="card-item-table__value">2 шт</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Бонус за товар</span>
+
+                    <span class="card-item-table__value">+12 345</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество</span>
+
+                    <span class="card-item-table__value">
+<div class="quantity">
+<button class="quantity__btn" type="button">
+<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+<rect width="10" height="1.42857" rx="0.714286"/>
+</svg>
+</button>
+
+<input class="quantity__input" name="quantity" type="text" value="1"/>
+
+<button class="quantity__btn" type="button">
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
+<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+</svg>
+</button>
+</div>
+</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Цена</span>
+
+                    <span class="card-item-table__value">123 456 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item__footer">
+            <button class="card-item-more">Подробнее</button>
+        </div>
+    </div>
+
+    <div class="card-item">
+        <div class="card-item__header">
+            <div class="card-item-photo">
+                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
+            </div>
+
+            <div class="card-item-status">
+                <div class="card-item-status__item">
+                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+            </div>
+
+            <div class="card-item-title">
+                <span class="card-item-title__text">Экстра бонус 12 345</span>
+            </div>
+
+            <button class="card-item-favorite">
+                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="card-item__body">
+            <div class="card-item-name">
+                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
+            </div>
+
+            <div class="card-item-presence">
+                <!--<div class="available">-->
+                <!--<span class="available__ico">-->
+                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
+                <!--</svg>-->
+                <!--</span>-->
+
+                <!--<span class="available__text">В наличии</span>-->
+                <!--</div>-->
+
+                <div class="not-available">
+<span class="not-available__ico">
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
+      fill="#666666"/>
+</svg>
+</span>
+
+                    <span class="not-available__text">Дата поставки</span>
+
+                    <span class="not-available__date">21.06.19</span>
+                </div>
+            </div>
+
+            <div class="card-item-table">
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество в упаковке</span>
+
+                    <span class="card-item-table__value">2 шт</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Бонус за товар</span>
+
+                    <span class="card-item-table__value">+12 345</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество</span>
+
+                    <span class="card-item-table__value">
+<div class="quantity">
+<button class="quantity__btn" type="button">
+<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+<rect width="10" height="1.42857" rx="0.714286"/>
+</svg>
+</button>
+
+<input class="quantity__input" name="quantity" type="text" value="1"/>
+
+<button class="quantity__btn" type="button">
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
+<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+</svg>
+</button>
+</div>
+</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Цена</span>
+
+                    <span class="card-item-table__value">123 456 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item__footer">
+            <button class="card-item-more">Подробнее</button>
+        </div>
+    </div>
+
+    <div class="card-item">
+        <div class="card-item__header">
+            <div class="card-item-photo">
+                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
+            </div>
+
+            <div class="card-item-status">
+                <div class="card-item-status__item">
+                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+
+                <div class="card-item-status__item">
+                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                </div>
+            </div>
+
+            <div class="card-item-title">
+                <span class="card-item-title__text">Экстра бонус 12 345</span>
+            </div>
+
+            <button class="card-item-favorite">
+                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="card-item__body">
+            <div class="card-item-name">
+                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
+            </div>
+
+            <div class="card-item-presence">
+                <!--<div class="available">-->
+                <!--<span class="available__ico">-->
+                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
+                <!--</svg>-->
+                <!--</span>-->
+
+                <!--<span class="available__text">В наличии</span>-->
+                <!--</div>-->
+
+                <div class="not-available">
+<span class="not-available__ico">
+<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
+      fill="#666666"/>
+</svg>
+</span>
+
+                    <span class="not-available__text">Дата поставки</span>
+
+                    <span class="not-available__date">21.06.19</span>
+                </div>
+            </div>
+
+            <div class="card-item-table">
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество в упаковке</span>
+
+                    <span class="card-item-table__value">2 шт</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Бонус за товар</span>
+
+                    <span class="card-item-table__value">+12 345</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Количество</span>
+
+                    <span class="card-item-table__value">
+<div class="quantity">
+<button class="quantity__btn" type="button">
+<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+<rect width="10" height="1.42857" rx="0.714286"/>
+</svg>
+</button>
+
+<input class="quantity__input" name="quantity" type="text" value="1"/>
+
+<button class="quantity__btn" type="button">
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
+<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+</svg>
+</button>
+</div>
+</span>
+                </div>
+
+                <div class="card-item-table__row">
+                    <span class="card-item-table__property">Цена</span>
+
+                    <span class="card-item-table__value">123 456 грн</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item__footer">
+            <button class="card-item-more">Подробнее</button>
+        </div>
+    </div>
+</div>
+
+              
+            </div>
+          </div>
+
+          <div class="resize-vert" data-grid="">
+            <span data-grid="button-toggle"></span>
+          </div>
+
+          <div class="order-container">
+            <div class="catalog-order">
+  <div class="catalog-order-panel">
+    <div class="catalog-order-panel__button-left">
+      <button type="button" class="catalog-order-button-description">
+        <span class="catalog-order-button-description__text">Описание товара</span>
+      </button>
+
+      <ul class="catalog-order-button-list">
+        <li class="catalog-order-button-list-item">
+          <div class="catalog-order-button">
+            <span class="catalog-order-button__text">Заказ O4G21</span>
+          </div>
+        </li>
+
+        <li class="catalog-order-button-list-item">
+          <div class="catalog-order-button active"><span class="catalog-order-button__text">Заказ O4G21</span>
+            <button class="catalog-order-button-remove">
+              <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="10" width="10">
+                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="catalog-order-button-list-item">
+          <div class="catalog-order-button">
+            <span class="catalog-order-button__text">Заказ O4G21</span>
+          </div>
+        </li>
+
+        <li class="catalog-order-button-list-item">
+          <div class="catalog-order-button">
+            <span class="catalog-order-button__text">Заказ O4G21</span>
+          </div>
+        </li>
+
+        <li class="catalog-order-button-list-item">
+          <div class="catalog-order-button">
+            <span class="catalog-order-button__text">Заказ O4G21</span>
+          </div>
+        </li>
+      </ul>
+
+      <button class="catalog-order-button-create-order">
+        <span class="catalog-order-button-create-order__text">+</span>
+      </button>
+    </div>
+
+    <div class="catalog-order-panel__button-right">
+      <a class="catalog-order-button-make-order" href="/order/">
+        <span class="catalog-order-button-make-order__ico">
+
+        </span>
+        <span class="catalog-order-button-make-order__text">Перейти в корзину</span>
+      </a>
+
+      <button class="catalog-order-button-export">
+        <svg class="catalog-order-button-export__ico" width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1.07617" width="27" height="23.2667" rx="1.5" stroke="#207245"/>
+          <g clip-path="url(#clip0)">
+            <path d="M14.9294 3.37616H16.189C16.189 3.95569 16.189 4.53306 16.189 5.11259C18.3116 5.11259 20.4342 5.11693 22.5568 5.10608C22.9152 5.12128 23.3096 5.09523 23.6213 5.31445C23.8397 5.63569 23.8143 6.04376 23.8291 6.41275C23.8185 10.1808 23.8227 13.9467 23.8249 17.7126C23.8143 18.3442 23.8821 18.9889 23.7528 19.6118C23.6679 20.0633 23.1378 20.0741 22.7837 20.0893C20.5869 20.0958 18.3879 20.085 16.189 20.0893C16.189 20.7405 16.189 21.3917 16.189 22.0428H14.8722C11.6405 21.4416 8.40255 20.8859 5.16669 20.3064C5.16669 15.2425 5.16669 10.1786 5.16669 5.11476C8.42164 4.53523 11.6766 3.96438 14.9294 3.37616Z" fill="#207245"/>
+            <path d="M16.1889 5.76376C18.5214 5.76376 20.854 5.76376 23.1865 5.76376C23.1865 10.3219 23.1865 14.88 23.1865 19.4382C20.854 19.4382 18.5214 19.4382 16.1889 19.4382C16.1889 19.0041 16.1889 18.57 16.1889 18.1359C16.7551 18.1359 17.3191 18.1359 17.8853 18.1359C17.8853 17.6301 17.8853 17.1222 17.8853 16.6165C17.3191 16.6165 16.7551 16.6165 16.1889 16.6165C16.1889 16.3278 16.1889 16.0369 16.1889 15.7483C16.7551 15.7483 17.3191 15.7483 17.8853 15.7483C17.8853 15.2425 17.8853 14.7346 17.8853 14.2289C17.3191 14.2289 16.7551 14.2289 16.1889 14.2289C16.1889 13.9402 16.1889 13.6493 16.1889 13.3607C16.7551 13.3607 17.3191 13.3607 17.8853 13.3607C17.8853 12.8549 17.8853 12.347 17.8853 11.8413C17.3191 11.8413 16.7551 11.8413 16.1889 11.8413C16.1889 11.5526 16.1889 11.2617 16.1889 10.9731C16.7551 10.9731 17.3191 10.9731 17.8853 10.9731C17.8853 10.4673 17.8853 9.95942 17.8853 9.45369C17.3191 9.45369 16.7551 9.45369 16.1889 9.45369C16.1889 9.165 16.1889 8.87415 16.1889 8.58547C16.7551 8.58547 17.3191 8.58547 17.8853 8.58547C17.8853 8.07973 17.8853 7.57183 17.8853 7.06609C17.3191 7.06609 16.7551 7.06609 16.1889 7.06609C16.1889 6.63198 16.1889 6.19787 16.1889 5.76376Z" fill="white"/>
+            <path d="M18.7335 7.0661C19.7237 7.0661 20.7119 7.0661 21.7021 7.0661C21.7021 7.57184 21.7021 8.07974 21.7021 8.58548C20.7119 8.58548 19.7237 8.58548 18.7335 8.58548C18.7335 8.07974 18.7335 7.57184 18.7335 7.0661Z" fill="#207245"/>
+            <path d="M11.4475 9.09973C11.9267 9.06501 12.4081 9.03462 12.8894 9.01074C12.3233 10.198 11.755 11.3853 11.1782 12.5683C11.7613 13.7838 12.3572 14.9906 12.9425 16.2061C12.4314 16.1757 11.9225 16.1431 11.4115 16.1062C11.051 15.2011 10.612 14.3264 10.3533 13.38C10.065 14.2613 9.65358 15.0926 9.32279 15.9565C8.8584 15.95 8.39401 15.9304 7.92963 15.9109C8.47459 14.8191 9.00047 13.7186 9.5624 12.6334C9.08529 11.5155 8.56153 10.4194 8.06958 9.30811C8.53609 9.27989 9.00259 9.25167 9.4691 9.22563C9.78505 10.0743 10.1307 10.9121 10.3915 11.7825C10.6714 10.86 11.0892 9.99183 11.4475 9.09973Z" fill="white"/>
+            <path d="M18.7335 9.45367C19.7237 9.45367 20.7119 9.45367 21.7021 9.45367C21.7021 9.95941 21.7021 10.4673 21.7021 10.9731C20.7119 10.9731 19.7237 10.9731 18.7335 10.9731C18.7335 10.4673 18.7335 9.95941 18.7335 9.45367Z" fill="#207245"/>
+            <path d="M18.7335 11.8412C19.7237 11.8412 20.7119 11.8412 21.7021 11.8412C21.7021 12.347 21.7021 12.8549 21.7021 13.3606C20.7119 13.3606 19.7237 13.3606 18.7335 13.3606C18.7335 12.8549 18.7335 12.347 18.7335 11.8412Z" fill="#207245"/>
+            <path d="M18.7335 14.2289C19.7237 14.2289 20.7119 14.2289 21.7021 14.2289C21.7021 14.7346 21.7021 15.2425 21.7021 15.7483C20.7119 15.7483 19.7237 15.7483 18.7335 15.7483C18.7335 15.2425 18.7335 14.7346 18.7335 14.2289Z" fill="#207245"/>
+            <path d="M18.7335 16.6165C19.7237 16.6165 20.7119 16.6165 21.7021 16.6165C21.7021 17.1222 21.7021 17.6301 21.7021 18.1358C20.7119 18.1358 19.7237 18.1358 18.7335 18.1358C18.7335 17.6301 18.7335 17.1222 18.7335 16.6165Z" fill="#207245"/>
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect width="18.6667" height="18.6667" fill="white" transform="translate(5.16669 3.37616)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="catalog-order-tabs">
+
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
