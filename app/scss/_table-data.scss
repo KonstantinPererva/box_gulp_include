@@ -1,6 +1,6 @@
 @import "var";
 
-.card-item-table {
+.table-data {
 
   &__row {
     display: flex;
@@ -21,5 +21,10 @@
     color: $c-text-main;
     font-family: $f-l;
     padding: 0 0 0 10px;
+  }
+
+  &__group {
+    border-bottom: 1px solid $c-gray-5;
+    padding: 5px 0;
   }
 }

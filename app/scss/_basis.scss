@@ -219,28 +219,6 @@ th.srs__container .srs__select_option {
   background-size: 19px;
   background-color: #fff;
 }
-#changesForSite {
-  background:url('/local/components/skalar/infoSiteUpdate/templates/.default/img/mail.png') center no-repeat;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  cursor: pointer;
-  margin-right: -20px;
-}
-#changesForSite .countNews{
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  border-radius: 50%;
-  background: #fff;
-  color: #2e4d9d;
-  text-align: center;
-  font-size: 11px;
-  box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.22);
-}
 #newsWindow {
   position: absolute;
   background-color: #fff;
@@ -306,29 +284,6 @@ th.srs__container .srs__select_option {
   font-size:11px;
   color:#ababab;
   font-weight:400;
-}
-
-#changesForSite {
-  background:url('/local/components/skalar/infoSiteUpdate/templates/.default/img/mail.png') center no-repeat;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  cursor: pointer;
-  margin-right: -20px;
-}
-#changesForSite .countNews{
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  border-radius: 50%;
-  background: #fff;
-  color: #2e4d9d;
-  text-align: center;
-  font-size: 11px;
-  box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.22);
 }
 
 .ka-pop-up-container {
@@ -416,12 +371,10 @@ ul.left-menu{list-style:none;margin:0;padding:0;margin-bottom:8px;position:relat
 /* Start:/local/templates/catalog_page/template_styles.css?155168582796509*/
 @font-face {
   font-family: 'lucida_sans_unicoderegular';
-  src: url('/local/templates/catalog_page/fonts/lsansuni-webfont.eot');
-  src: url('/local/templates/catalog_page/fonts/lsansuni-webfont.eot?#iefix') format('embedded-opentype'),
-  url('/local/templates/catalog_page/fonts/lsansuni-webfont.woff2') format('woff2'),
-  url('/local/templates/catalog_page/fonts/lsansuni-webfont.woff') format('woff'),
-  url('/local/templates/catalog_page/fonts/lsansuni-webfont.ttf') format('truetype'),
-  url('/local/templates/catalog_page/fonts/lsansuni-webfont.svg#lucida_sans_unicoderegular') format('svg');
+  src:
+  url('../fonts/lsansuni-webfont.woff2') format('woff2'),
+  url('../fonts/lsansuni-webfont.woff') format('woff'),
+  url('../fonts/lsansuni-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 
@@ -745,7 +698,7 @@ h1{
 .bottom-box span{
   display: inline-block;
   vertical-align: top;
-  background:#fff url(/local/templates/catalog_page/images/sprite.png) no-repeat;
+  background:#fff url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat;
   width:33px;
   height:23px;
 }
@@ -843,7 +796,7 @@ h1{
   font-size: 18px;
 }
 .close{
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat -49px -2px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -49px -2px;
   width: 17px;
   height: 17px;
   position: absolute;
@@ -896,7 +849,7 @@ h1{
   transform: rotate(180deg);
 }
 .rotate {
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat -79px -2px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -79px -2px;
   width: 18px;
   height: 18px;
   float: right;
@@ -956,7 +909,7 @@ h1{
   content: "";
   display: block;
   position:   absolute;
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat 0 -28px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat 0 -28px;
   width: 7px;
   height: 4px;
   top: 50%;
@@ -1325,7 +1278,7 @@ h1{
 .head-tab-box .close-inp,
 .close-inp,
 .table-cat td .close-inp{
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat -19px -30px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -19px -30px;
   width: 10px;
   height: 10px;
   position:   absolute;
@@ -1371,7 +1324,7 @@ h1{
 }
 .table-cat .ic-going-disabled,
 .table-cat .ic-going{
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat -63px -24px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -63px -24px;
   width: 26px;
   height: 22px;
   float:  left;
@@ -1384,7 +1337,7 @@ h1{
 }
 .table-cat .ic-foto-disabled,
 .table-cat .ic-foto{
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat -36px -23px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -36px -23px;
   width:26px;
   height: 22px;
   float:  left;
@@ -1463,7 +1416,7 @@ h1{
 .tell-btn:before{
   content:"";
   position: absolute;
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat  0 -86px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat  0 -86px;
   width: 15px;
   height: 15px;
   left:9px;
@@ -1479,7 +1432,7 @@ h1{
 }
 .print{
   float: right;
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat 0 -52px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat 0 -52px;
   width: 24px;
   height: 24px;
   cursor:     pointer;
@@ -1588,7 +1541,7 @@ h1{
   margin:0 0 15px;
 }
 .question{
-  background:url(/local/templates/catalog_page/images/sprite.png) no-repeat -64px -73px;
+  background:url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -64px -73px;
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -1792,7 +1745,7 @@ h1{
 }
 
 .jq-checkbox .jq-checkbox__div{
-  background:url(/local/templates/catalog_page/images/sprite.png) no-repeat -47px -89px;
+  background:url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -47px -89px;
   width: 13px;
   height: 11px;
   cursor:     pointer;
@@ -2128,7 +2081,7 @@ h1{
 .paging-bx ul li a.prev{
   text-indent:-9999px;
   overflow: hidden;
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat  -68px -100px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat  -68px -100px;
   width: 8px;
   height: 12px;
   display: block;
@@ -2310,7 +2263,7 @@ h1{
   top:0;
   right:0;
   content:"";
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat -29px -134px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -29px -134px;
   width: 12px;
   height: 18px;
 }
@@ -2377,7 +2330,7 @@ main .holder-act{
 }
 .close-menu{
   float:right;
-  background: url(/local/templates/catalog_page/images/sprite.png) no-repeat -30px -170px;
+  background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -30px -170px;
   width: 20px;
   height: 20px;
   margin:5px;
@@ -2770,7 +2723,7 @@ span.hide-close-1, span.hide-close-2{
     clear: both;
   }
   .opener{
-    background:url(/local/templates/catalog_page/images/sprite.png) no-repeat -60px -163px;
+    background:url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat -60px -163px;
     float:left;
     width: 40px;
     height: 30px;
@@ -3078,7 +3031,7 @@ span.hide-close-1, span.hide-close-2{
   .head-listback span:before{
     content:"";
     position:absolute;
-    background: url(/local/templates/catalog_page/images/sprite.png) no-repeat 0 -176px;
+    background: url(https://kronavto.ua/local/templates/catalog_page/images/sprite.png) no-repeat 0 -176px;
     width: 10px;
     height: 14px;
     top:50%;
@@ -3678,26 +3631,33 @@ tr.purchased td span{
   background-color: #fff;
 }
 #changesForSite {
-  background:url('/local/templates/catalog_page/images/mail.png') center no-repeat;
+  background:url('https://kronavto.ua/local/templates/catalog_page/images/mail.png') center no-repeat;
   width: 24px;
-  height: 24px;
+  height: 20px;
   position: relative;
   cursor: pointer;
   margin-right: -20px;
 }
-#changesForSite .countNews{
+.indicator-counter{
   position: absolute;
-  top: -4px;
-  right: -4px;
+  top: -6px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
-  line-height: 20px;
   border-radius: 50%;
   background: #fff;
-  color: #2e4d9d;
-  text-align: center;
-  font-size: 11px;
+  font-size: 9px;
+  font-family: $f-l;
+  color: $c-blue;
   box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.22);
+
+  &__num {
+    display: block;
+    flex-shrink: 0;
+  }
 }
 
 .ka-pop-up-container {

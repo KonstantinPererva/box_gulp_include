@@ -10,9 +10,14 @@
     "npm": "^6.10.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
     "browser-sync": "^2.18.13",
+    "gulp-babel": "^8.0.0",
     "gulp-include": "^2.4.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "simplebar": "^4.1.0",
+    "swiper": "^4.5.0"
   },
   "scripts": {
     "start": "gulp watch"

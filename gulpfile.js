@@ -2,7 +2,16 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+    babel = require('gulp-babel');
+
+gulp.task('babel', function() {
+    gulp.src('app/app.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('app/js'))
+});
 
 gulp.task('fileinclude', function() {
     gulp.src(['app/index/index.html'])
@@ -30,8 +39,9 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('watch', ['browser-sync', 'sass', 'fileinclude'], function() {
+gulp.task('watch', ['browser-sync', 'sass', 'fileinclude', 'babel'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/**/*.html',['fileinclude', browserSync.reload]);
-    gulp.watch('app/script/**/*.js', browserSync.reload);
+    gulp.watch('app/js/**/*.js', ['babel', browserSync.reload]);
+    gulp.watch('app/*.js', ['babel', browserSync.reload]);
 });
