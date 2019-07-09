@@ -1,4 +1,5 @@
 @import "button-common";
+@import "var";
 
 $c-bg: $c-blue;
 $c-bg-hover: $c-blue-dark;
@@ -10,13 +11,13 @@ $c-bg-hover: $c-blue-dark;
   letter-spacing: 1px;
   color: #fff;
   background: $c-bg;
-  border-color: $c-bg;
+  border: 0;
   padding: 0 35px;
+  border-radius: 2px;
 
   @media (hover:hover) {
     &:hover {
-      background: $c-blue-dark;
-      border-color: $c-blue-dark;
+      background: $c-bg-hover;
     }
   }
 }

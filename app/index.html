@@ -8,6 +8,7 @@
 
   <title>Крон-Авто | Онлайн-кабинет</title>
 
+  <link rel="stylesheet" href="./css/simplebar.css"/>
   <link rel="stylesheet" href="./css/style.css"/>
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700,600italic,600,300italic,300,400italic,700italic&subset=latin,cyrillic'
@@ -2204,19 +2205,15 @@
         </ul>
     </li>
 
-    <li><a class="third_lev" data-section_id="16029" href="#">Рекламная продукция</a></li>
+    <li><a class="" data-section_id="16029" href="#">Рекламная продукция</a></li>
 
-    <li class="sub"><a class="second_lev" style="color:#1268b1;" href="#" data-section_id="news">Новинки</a>
-    </li>
+    <li><a class="" style="color:#1268b1;" href="#" data-section_id="news">Новинки</a></li>
 
-    <li class="sub"><a class="second_lev" style="color:#b13712;" href="#"
-                       data-section_id="extrabonus">ЭКСТРА-БОНУС</a></li>
+    <li><a class="" style="color:#b13712;" href="#" data-section_id="extrabonus">ЭКСТРА-БОНУС</a></li>
 
-    <li class="sub"><a class="second_lev" style="color:#2b2b2b; font-weight:bold;" href="#"
-                       data-section_id="my_products">Мои товары</a></li>
+    <li><a class="" style="color:#068800;" href="#" data-section_id="presents">Подарки</a></li>
 
-    <li class="sub"><a class="second_lev" style="color:#068800;" href="#"
-                       data-section_id="presents">Подарки</a></li>
+    <li><a class="" style="color:#2b2b2b; font-weight:bold;" href="#" data-section_id="my_products">Мои товары</a></li>
 </ul>
 
           </div>
@@ -2316,20 +2313,11 @@
         </aside>
 
         <div class="main-holder" data-grid="catalog-cell-right">
-          <div class="catalog-container">
-            <div class="catalog-container__search">
-              <form action="#" class="search-form voicesearchContainer">
-    <div class="historyGmButton">История</div>
-
-    <button class="search_button">Искать</button>
-
-    <div class="input-row">
-        <input type="search" class="inpsearchgm1" placeholder="Введите поисковый запрос" />
-
-        <span class="close-inp clear_form" data-section_id="15510"></span>
-
-        <div class="srs__lang"></div>
-    </div>
+          <div class="main-holder__inner">
+            <div class="catalog-container" data-grid="catalog-row-top-cell-right">
+              <div class="catalog-container__search">
+                <form action="#" class="search-form voicesearchContainer">
+    <div id="voiceSearchBtn" title="Нажми - говори - отпусти"></div>
 
     <div class="drop-history deskgmhist" style="display:none;">
         <ul>
@@ -2357,910 +2345,2102 @@
         </ul>
     </div>
 
-    <div id="voiceSearchBtn" title="Нажми - говори - отпусти"></div>
+    <div class="input-row">
+        <input type="search" class="inpsearchgm1" placeholder="Введите поисковый запрос" />
+
+        <div class="close-inp clear_form" data-section_id="15510">
+            <span class="close-inp__ico"></span>
+        </div>
+    </div>
+
+    <button type="button" class="search_button">Искать</button>
+
+    <button type="button" class="historyGmButton">История</button>
+
+    <div class="information-type">
+        <span class="information-type__text">Просмотр</span>
+
+        <span class="information-type__button active">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="20" height="2" fill="#C4C4C4"/>
+                <rect y="4" width="20" height="2" fill="#C4C4C4"/>
+                <rect y="8" width="20" height="2" fill="#C4C4C4"/>
+                <rect y="12" width="20" height="2" fill="#C4C4C4"/>
+            </svg>
+        </span>
+
+        <span class="information-type__button">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.85718 0H0V2H2.85718V0Z" fill="#C4C4C4"/>
+                <path d="M2.85718 4H0V6H2.85718V4Z" fill="#C4C4C4"/>
+                <path d="M0 8H2.85718V10H0V8Z" fill="#C4C4C4"/>
+                <path d="M2.85718 12H0V14H2.85718V12Z" fill="#C4C4C4"/>
+                <path d="M5.71423 0H8.57141V2H5.71423V0Z" fill="#C4C4C4"/>
+                <path d="M8.57141 4H5.71423V6H8.57141V4Z" fill="#C4C4C4"/>
+                <path d="M5.71423 8H8.57141V10H5.71423V8Z" fill="#C4C4C4"/>
+                <path d="M8.57141 12H5.71423V14H8.57141V12Z" fill="#C4C4C4"/>
+                <path d="M11.4286 0H14.2858V2H11.4286V0Z" fill="#C4C4C4"/>
+                <path d="M14.2858 4H11.4286V6H14.2858V4Z" fill="#C4C4C4"/>
+                <path d="M11.4286 8H14.2858V10H11.4286V8Z" fill="#C4C4C4"/>
+                <path d="M14.2858 12H11.4286V14H14.2858V12Z" fill="#C4C4C4"/>
+                <path d="M17.1428 0H20V2H17.1428V0Z" fill="#C4C4C4"/>
+                <path d="M20 4H17.1428V6H20V4Z" fill="#C4C4C4"/>
+                <path d="M17.1428 8H20V10H17.1428V8Z" fill="#C4C4C4"/>
+                <path d="M20 12H17.1428V14H20V12Z" fill="#C4C4C4"/>
+            </svg>
+        </span>
+    </div>
 </form>
-            </div>
+              </div>
 
-            <div class="catalog-container__goods">
-              <div class="card-list">
-    <div class="card-item">
-        <div class="card-item__header">
-            <div class="card-item-photo">
-                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
-            </div>
+              <div class="catalog-container__goods">
+                
 
-            <div class="card-item-status">
-                <div class="card-item-status__item">
-                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                <div class="table">
+    <div class="table-header">
+        <div class="table-header__inner">
+            <div class="table-row">
+                <div class="table-cell table-cell_hr"></div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Код</span>
+                    </div>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Каталожный номер</span>
+                    </div>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Наименование</span>
+                    </div>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-            </div>
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
 
-            <div class="card-item-title">
-                <span class="card-item-title__text">Экстра бонус 12 345</span>
-            </div>
-
-            <button class="card-item-favorite card-item-favorite_active">
-                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="card-item__body">
-            <div class="card-item-name">
-                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
-            </div>
-
-            <div class="card-item-presence">
-                <!--<div class="available">-->
-                <!--<span class="available__ico">-->
-                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
-                <!--</svg>-->
-                <!--</span>-->
-
-                <!--<span class="available__text">В наличии</span>-->
-                <!--</div>-->
-
-                <div class="not-available">
-<span class="not-available__ico">
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
-      fill="#666666"/>
-</svg>
-</span>
-
-                    <span class="not-available__text">Дата поставки</span>
-
-                    <span class="not-available__date">21.06.19</span>
-                </div>
-            </div>
-
-            <div class="table-data">
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество в упаковке</span>
-
-                    <span class="table-data__value">2 шт</span>
+                        <span class="table-cell__text table-cell__text_hr">Бренд</span>
+                    </div>
                 </div>
 
-                <div class="table-data__row">
-                    <span class="table-data__property">Бонус за товар</span>
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
 
-                    <span class="table-data__value">+12 345</span>
+                        <span class="table-cell__text table-cell__text_hr">Ед.</span>
+                    </div>
                 </div>
 
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество</span>
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
 
-                    <span class="table-data__value">
-<div class="quantity">
-<button class="quantity__btn" type="button">
-<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
-<rect width="10" height="1.42857" rx="0.714286"/>
-</svg>
-</button>
-
-<input class="quantity__input" name="quantity" type="text" value="1"/>
-
-<button class="quantity__btn" type="button">
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
-<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
-<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
-</svg>
-</button>
-</div>
-</span>
+                        <span class="table-cell__text table-cell__text_hr">Ост.</span>
+                    </div>
                 </div>
 
-                <div class="table-data__row">
-                    <span class="table-data__property">Цена</span>
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
 
-                    <span class="table-data__value">123 456 грн</span>
+                        <span class="table-cell__text table-cell__text_hr">Цена</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__text table-cell__text_hr">Кол-во</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card-item__footer">
-            <button class="card-item-more">Подробнее</button>
+            <div class="table-row">
+                <div class="table-cell table-cell_filter"></div>
+
+                <div class="table-cell table-cell_filter">
+                    <div class="table-filter">
+                        <input type="text" name="filter" class="table-filter__input" />
+
+                        <button type="button" class="table-filter__ico">x</button>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_filter">
+                    <div class="table-filter">
+                        <input type="text" name="filter" class="table-filter__input" />
+
+                        <button type="button" class="table-filter__ico">x</button>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_filter">
+                    <div class="table-filter">
+                        <input type="text" name="filter" class="table-filter__input" />
+
+                        <button type="button" class="table-filter__ico">x</button>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_filter">
+                    <div class="table-filter">
+                        <input type="text" name="filter" class="table-filter__input" />
+
+                        <button type="button" class="table-filter__ico">x</button>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_filter">
+                    <div class="table-filter">
+                        <input type="text" name="filter" class="table-filter__input" />
+
+                        <button type="button" class="table-filter__ico">x</button>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_filter">
+                    <div class="table-filter">
+                        <input type="text" name="filter" class="table-filter__input" />
+
+                        <button type="button" class="table-filter__ico">x</button>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_filter">
+                    <div class="table-filter">
+                        <input type="text" name="filter" class="table-filter__input" />
+
+                        <button type="button" class="table-filter__ico">x</button>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_filter"></div>
+            </div>
         </div>
     </div>
 
-    <div class="card-item">
-        <div class="card-item__header">
-            <div class="card-item-photo">
-                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
-            </div>
+    <div class="table-body table-body_first">
+        <div class="table-body__inner">
+            <div class="table-row">
+                <div class="table-cell">
 
-            <div class="card-item-status">
-                <div class="card-item-status__item">
-                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-            </div>
-
-            <div class="card-item-title">
-                <span class="card-item-title__text">Экстра бонус 12 345</span>
-            </div>
-
-            <button class="card-item-favorite">
-                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="card-item__body">
-            <div class="card-item-name">
-                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
-            </div>
-
-            <div class="card-item-presence">
-                <!--<div class="available">-->
-                <!--<span class="available__ico">-->
-                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
-                <!--</svg>-->
-                <!--</span>-->
-
-                <!--<span class="available__text">В наличии</span>-->
-                <!--</div>-->
-
-                <div class="not-available">
-<span class="not-available__ico">
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
-      fill="#666666"/>
-</svg>
-</span>
-
-                    <span class="not-available__text">Дата поставки</span>
-
-                    <span class="not-available__date">21.06.19</span>
-                </div>
-            </div>
-
-            <div class="table-data">
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество в упаковке</span>
-
-                    <span class="table-data__value">2 шт</span>
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
                 </div>
 
-                <div class="table-data__row">
-                    <span class="table-data__property">Бонус за товар</span>
-
-                    <span class="table-data__value">+12 345</span>
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
                 </div>
 
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество</span>
-
-                    <span class="table-data__value">
-<div class="quantity">
-<button class="quantity__btn" type="button">
-<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
-<rect width="10" height="1.42857" rx="0.714286"/>
-</svg>
-</button>
-
-<input class="quantity__input" name="quantity" type="text" value="1"/>
-
-<button class="quantity__btn" type="button">
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
-<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
-<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
-</svg>
-</button>
-</div>
-</span>
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
                 </div>
 
-                <div class="table-data__row">
-                    <span class="table-data__property">Цена</span>
-
-                    <span class="table-data__value">123 456 грн</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-item__footer">
-            <button class="card-item-more">Подробнее</button>
-        </div>
-    </div>
-
-    <div class="card-item">
-        <div class="card-item__header">
-            <div class="card-item-photo">
-                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
-            </div>
-
-            <div class="card-item-status">
-                <div class="card-item-status__item">
-                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
                 </div>
 
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-            </div>
-
-            <div class="card-item-title">
-                <span class="card-item-title__text">Экстра бонус 12 345</span>
-            </div>
-
-            <button class="card-item-favorite">
-                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="card-item__body">
-            <div class="card-item-name">
-                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
-            </div>
-
-            <div class="card-item-presence">
-                <!--<div class="available">-->
-                <!--<span class="available__ico">-->
-                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
-                <!--</svg>-->
-                <!--</span>-->
-
-                <!--<span class="available__text">В наличии</span>-->
-                <!--</div>-->
-
-                <div class="not-available">
-<span class="not-available__ico">
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
-      fill="#666666"/>
-</svg>
-</span>
-
-                    <span class="not-available__text">Дата поставки</span>
-
-                    <span class="not-available__date">21.06.19</span>
-                </div>
-            </div>
-
-            <div class="table-data">
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество в упаковке</span>
-
-                    <span class="table-data__value">2 шт</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Бонус за товар</span>
-
-                    <span class="table-data__value">+12 345</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество</span>
-
-                    <span class="table-data__value">
-<div class="quantity">
-<button class="quantity__btn" type="button">
-<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
-<rect width="10" height="1.42857" rx="0.714286"/>
-</svg>
-</button>
-
-<input class="quantity__input" name="quantity" type="text" value="1"/>
-
-<button class="quantity__btn" type="button">
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
-<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
-<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
-</svg>
-</button>
-</div>
-</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Цена</span>
-
-                    <span class="table-data__value">123 456 грн</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-item__footer">
-            <button class="card-item-more">Подробнее</button>
-        </div>
-    </div>
-
-    <div class="card-item">
-        <div class="card-item__header">
-            <div class="card-item-photo">
-                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
-            </div>
-
-            <div class="card-item-status">
-                <div class="card-item-status__item">
-                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-            </div>
-
-            <div class="card-item-title">
-                <span class="card-item-title__text">Экстра бонус 12 345</span>
-            </div>
-
-            <button class="card-item-favorite">
-                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="card-item__body">
-            <div class="card-item-name">
-                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
-            </div>
-
-            <div class="card-item-presence">
-                <!--<div class="available">-->
-                <!--<span class="available__ico">-->
-                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
-                <!--</svg>-->
-                <!--</span>-->
-
-                <!--<span class="available__text">В наличии</span>-->
-                <!--</div>-->
-
-                <div class="not-available">
-<span class="not-available__ico">
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
-      fill="#666666"/>
-</svg>
-</span>
-
-                    <span class="not-available__text">Дата поставки</span>
-
-                    <span class="not-available__date">21.06.19</span>
-                </div>
-            </div>
-
-            <div class="table-data">
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество в упаковке</span>
-
-                    <span class="table-data__value">2 шт</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Бонус за товар</span>
-
-                    <span class="table-data__value">+12 345</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество</span>
-
-                    <span class="table-data__value">
-<div class="quantity">
-<button class="quantity__btn" type="button">
-<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
-<rect width="10" height="1.42857" rx="0.714286"/>
-</svg>
-</button>
-
-<input class="quantity__input" name="quantity" type="text" value="1"/>
-
-<button class="quantity__btn" type="button">
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
-<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
-<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
-</svg>
-</button>
-</div>
-</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Цена</span>
-
-                    <span class="table-data__value">123 456 грн</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-item__footer">
-            <button class="card-item-more">Подробнее</button>
-        </div>
-    </div>
-
-    <div class="card-item">
-        <div class="card-item__header">
-            <div class="card-item-photo">
-                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
-            </div>
-
-            <div class="card-item-status">
-                <div class="card-item-status__item">
-                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-            </div>
-
-            <div class="card-item-title">
-                <span class="card-item-title__text">Экстра бонус 12 345</span>
-            </div>
-
-            <button class="card-item-favorite">
-                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="card-item__body">
-            <div class="card-item-name">
-                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
-            </div>
-
-            <div class="card-item-presence">
-                <!--<div class="available">-->
-                <!--<span class="available__ico">-->
-                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
-                <!--</svg>-->
-                <!--</span>-->
-
-                <!--<span class="available__text">В наличии</span>-->
-                <!--</div>-->
-
-                <div class="not-available">
-<span class="not-available__ico">
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
-      fill="#666666"/>
-</svg>
-</span>
-
-                    <span class="not-available__text">Дата поставки</span>
-
-                    <span class="not-available__date">21.06.19</span>
-                </div>
-            </div>
-
-            <div class="table-data">
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество в упаковке</span>
-
-                    <span class="table-data__value">2 шт</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Бонус за товар</span>
-
-                    <span class="table-data__value">+12 345</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество</span>
-
-                    <span class="table-data__value">
-<div class="quantity">
-<button class="quantity__btn" type="button">
-<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
-<rect width="10" height="1.42857" rx="0.714286"/>
-</svg>
-</button>
-
-<input class="quantity__input" name="quantity" type="text" value="1"/>
-
-<button class="quantity__btn" type="button">
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
-<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
-<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
-</svg>
-</button>
-</div>
-</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Цена</span>
-
-                    <span class="table-data__value">123 456 грн</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-item__footer">
-            <button class="card-item-more">Подробнее</button>
-        </div>
-    </div>
-
-    <div class="card-item">
-        <div class="card-item__header">
-            <div class="card-item-photo">
-                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
-            </div>
-
-            <div class="card-item-status">
-                <div class="card-item-status__item">
-                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-            </div>
-
-            <div class="card-item-title">
-                <span class="card-item-title__text">Экстра бонус 12 345</span>
-            </div>
-
-            <button class="card-item-favorite">
-                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="card-item__body">
-            <div class="card-item-name">
-                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
-            </div>
-
-            <div class="card-item-presence">
-                <!--<div class="available">-->
-                <!--<span class="available__ico">-->
-                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
-                <!--</svg>-->
-                <!--</span>-->
-
-                <!--<span class="available__text">В наличии</span>-->
-                <!--</div>-->
-
-                <div class="not-available">
-<span class="not-available__ico">
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
-      fill="#666666"/>
-</svg>
-</span>
-
-                    <span class="not-available__text">Дата поставки</span>
-
-                    <span class="not-available__date">21.06.19</span>
-                </div>
-            </div>
-
-            <div class="table-data">
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество в упаковке</span>
-
-                    <span class="table-data__value">2 шт</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Бонус за товар</span>
-
-                    <span class="table-data__value">+12 345</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество</span>
-
-                    <span class="table-data__value">
-<div class="quantity">
-<button class="quantity__btn" type="button">
-<svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
-<rect width="10" height="1.42857" rx="0.714286"/>
-</svg>
-</button>
-
-<input class="quantity__input" name="quantity" type="text" value="1"/>
-
-<button class="quantity__btn" type="button">
-<svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
-<path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
-<path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
-</svg>
-</button>
-</div>
-</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Цена</span>
-
-                    <span class="table-data__value">123 456 грн</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-item__footer">
-            <button class="card-item-more">Подробнее</button>
-        </div>
-    </div>
-
-    <div class="card-item">
-        <div class="card-item__header">
-            <div class="card-item-photo">
-                <img src="images/goods.png" alt="photo" class="card-item-photo__img"/>
-            </div>
-
-            <div class="card-item-status">
-                <div class="card-item-status__item">
-                    <img src="images/svg/gift.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-
-                <div class="card-item-status__item">
-                    <img src="images/svg/new.svg" alt="gift" class="card-item-status__img"/>
-                </div>
-            </div>
-
-            <div class="card-item-title">
-                <span class="card-item-title__text">Экстра бонус 12 345</span>
-            </div>
-
-            <button class="card-item-favorite">
-                <svg class="card-item-favorite__ico" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.2268 18.5031C10.4408 18.6904 10.7153 18.7936 11 18.7936C11.2846 18.7936 11.5592 18.6904 11.773 18.5034C12.5828 17.7952 13.363 17.1302 14.0515 16.5437L14.0517 16.5434C16.0662 14.8266 17.8059 13.344 19.0165 11.8832C20.3698 10.2503 21 8.70203 21 7.01059C21 5.36722 20.4366 3.8511 19.4135 2.74133C18.3782 1.61844 16.9575 1 15.413 1C14.2585 1 13.2012 1.36499 12.2706 2.08475C11.8008 2.44806 11.3752 2.8927 11 3.41135C10.6249 2.8927 10.1992 2.44806 9.72955 2.08475C8.79892 1.36499 7.74164 1 6.58716 1C5.04251 1 3.62192 1.61844 2.58661 2.74133C1.56351 3.8511 1 5.36722 1 7.01059C1 8.70203 1.63034 10.2503 2.98364 11.8833C4.19427 13.3441 5.93423 14.8269 7.94916 16.544L7.95267 16.547C8.63992 17.1327 9.41888 17.7966 10.2268 18.5031Z"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="card-item__body">
-            <div class="card-item-name">
-                <span class="card-item-name__text">Цилиндр главный сцепления ВАЗ 2101, 21011, 2102, 2103, 2104, 21043, 2105, 2106 21011, 2102, 2103, 2104, 21043, 2105, 2106</span>
-            </div>
-
-            <div class="card-item-presence">
-                <!--<div class="available">-->
-                <!--<span class="available__ico">-->
-                <!--<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                <!--<path d="M9.32958 2.88533C8.88246 2.11932 8.27596 1.51282 7.50993 1.06572C6.74376 0.618637 5.90738 0.395142 5.00015 0.395142C4.09301 0.395142 3.25638 0.618637 2.49035 1.06572C1.72427 1.51275 1.11777 2.11925 0.670645 2.88533C0.223495 3.65145 0 4.48808 0 5.39515C0 6.30227 0.223564 7.13876 0.670577 7.90493C1.11768 8.67094 1.72418 9.27744 2.49026 9.72459C3.25638 10.1716 4.09294 10.3952 5.00006 10.3952C5.90717 10.3952 6.74383 10.1716 7.5099 9.72459C8.27593 9.2776 8.88241 8.67094 9.32949 7.90493C9.77651 7.13883 9.99998 6.30222 9.99998 5.39515C10 4.48799 9.77651 3.65134 9.32958 2.88533ZM8.24214 4.63343L4.70706 8.16854C4.62458 8.25108 4.52481 8.29231 4.40756 8.29231C4.29473 8.29231 4.19711 8.25108 4.1146 8.16854L1.75775 5.81181C1.67971 5.73362 1.64061 5.63616 1.64061 5.51886C1.64061 5.39737 1.67958 5.29746 1.75775 5.21932L2.3502 4.63343C2.43277 4.55097 2.5303 4.50975 2.64322 4.50975C2.75614 4.50975 2.85381 4.551 2.93624 4.63343L4.40763 6.10477L7.06387 3.45505C7.14635 3.37257 7.24397 3.33132 7.35682 3.33132C7.46959 3.33132 7.56737 3.37257 7.64978 3.45505L8.24223 4.04102C8.32049 4.1191 8.35944 4.21891 8.35944 4.34041C8.35944 4.45764 8.32049 4.55531 8.24214 4.63343Z" />-->
-                <!--</svg>-->
-                <!--</span>-->
-
-                <!--<span class="available__text">В наличии</span>-->
-                <!--</div>-->
-
-                <div class="not-available">
-<span class="not-available__ico">
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.8902 1.36595C9.81697 1.29274 9.72997 1.25601 9.6298 1.25601H3.70377C3.60347 1.25601 3.51662 1.29274 3.44336 1.36595C3.37009 1.43927 3.33342 1.52613 3.33342 1.62642V2.73756H2.40744C2.30326 2.73756 2.19036 2.76263 2.06884 2.81278C1.9473 2.86301 1.84991 2.92463 1.77663 2.99794L0.63075 4.14381C0.580623 4.19395 0.537267 4.25178 0.500538 4.31742C0.463911 4.38289 0.436892 4.44187 0.41952 4.49386C0.40219 4.546 0.389582 4.61728 0.381941 4.70803C0.374279 4.79874 0.369373 4.86528 0.367448 4.90775C0.365603 4.95015 0.365603 5.02349 0.367448 5.12767C0.369394 5.2319 0.370367 5.29936 0.370367 5.33027V7.1821C0.270093 7.1821 0.183298 7.21873 0.109963 7.29213C0.0366678 7.36528 0 7.45217 0 7.55249C0 7.61028 0.00766192 7.66146 0.0231074 7.70577C0.0385731 7.75016 0.064579 7.78581 0.101308 7.81287C0.137935 7.83993 0.169778 7.86205 0.196757 7.87946C0.223817 7.89679 0.26914 7.90832 0.332787 7.91414C0.396433 7.91996 0.43981 7.92385 0.462979 7.92579C0.486147 7.9276 0.535301 7.9276 0.610521 7.92579C0.685823 7.92385 0.7292 7.92288 0.740794 7.92288H1.11114C1.11114 8.33171 1.25585 8.6809 1.54513 8.97029C1.83452 9.25962 2.18365 9.40432 2.59263 9.40432C3.00157 9.40432 3.35073 9.25962 3.64006 8.97029C3.92945 8.68092 4.07405 8.33171 4.07405 7.92288H6.29635C6.29635 8.33171 6.44106 8.6809 6.73037 8.97029C7.01964 9.25962 7.36882 9.40432 7.7778 9.40432C8.18686 9.40432 8.53582 9.25962 8.82523 8.97029C9.11462 8.68092 9.25925 8.33171 9.25925 7.92288C9.27076 7.92288 9.3142 7.92385 9.38938 7.92579C9.46464 7.9276 9.51383 7.9276 9.53698 7.92579C9.56017 7.92385 9.60365 7.91996 9.66725 7.91414C9.73088 7.90832 9.77616 7.89681 9.80322 7.87946C9.83028 7.86211 9.86203 7.83993 9.89867 7.81287C9.93536 7.78581 9.96145 7.75016 9.97683 7.70577C9.99244 7.66144 10 7.61026 10 7.55249V1.62648C10.0001 1.52617 9.96345 1.43941 9.8902 1.36595ZM3.11335 8.4437C2.96682 8.59025 2.79315 8.66371 2.59255 8.66371C2.39192 8.66371 2.21829 8.59033 2.07168 8.4437C1.92507 8.29719 1.85179 8.1235 1.85179 7.92292C1.85179 7.72231 1.92515 7.54854 2.07168 7.40197C2.21827 7.25546 2.3919 7.18208 2.59255 7.18208C2.79315 7.18208 2.9668 7.2554 3.11335 7.40197C3.26002 7.54854 3.33334 7.72231 3.33334 7.92292C3.33334 8.1235 3.26002 8.29719 3.11335 8.4437ZM3.33334 4.95982H1.11106V4.78627C1.11106 4.7361 1.12839 4.69366 1.16311 4.65892L2.2916 3.53047C2.3263 3.49572 2.36881 3.47841 2.41896 3.47841H3.33334V4.95982ZM8.29859 8.4437C8.15204 8.59025 7.97839 8.66371 7.7778 8.66371C7.57713 8.66371 7.40342 8.59033 7.25687 8.4437C7.1103 8.29719 7.03697 8.1235 7.03697 7.92292C7.03697 7.72231 7.11028 7.54854 7.25687 7.40197C7.40342 7.25546 7.57713 7.18208 7.7778 7.18208C7.97839 7.18208 8.15204 7.2554 8.29859 7.40197C8.44516 7.54862 8.51855 7.72231 8.51855 7.92292C8.51855 8.1235 8.4453 8.29719 8.29859 8.4437Z"
-      fill="#666666"/>
-</svg>
-</span>
-
-                    <span class="not-available__text">Дата поставки</span>
-
-                    <span class="not-available__date">21.06.19</span>
-                </div>
-            </div>
-
-            <div class="table-data">
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество в упаковке</span>
-
-                    <span class="table-data__value">2 шт</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Бонус за товар</span>
-
-                    <span class="table-data__value">+12 345</span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Количество</span>
-
-                    <span class="table-data__value">
+                <div class="table-cell">
+                    <div class="table-cell__inner">
                         <div class="quantity">
                             <button class="quantity__btn" type="button">
                                 <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
-                                    <rect width="10" height="1.42857" rx="0.714286"/>
+                                    <rect width="10" height="1.42857" rx="0.714286" />
                                 </svg>
                             </button>
 
-                            <input class="quantity__input" name="quantity" type="text" value="1"/>
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
 
                             <button class="quantity__btn" type="button">
                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
-                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z"/>
-                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z"/>
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
                                 </svg>
                             </button>
                         </div>
-                    </span>
-                </div>
-
-                <div class="table-data__row">
-                    <span class="table-data__property">Цена</span>
-
-                    <span class="table-data__value">123 456 грн</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card-item__footer">
-            <button class="card-item-more">Подробнее</button>
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-              
+              </div>
             </div>
-          </div>
 
-          <div class="resize-vert" data-grid="">
-            <span data-grid="button-toggle"></span>
-          </div>
+            <div class="resize-vert" data-grid="catalog-lever-vertical-cell-right">
+              <span data-grid="button-toggle"></span>
+            </div>
 
-          <div class="order-container">
-            <div class="catalog-order">
+            <div class="catalog-order-container" data-grid="catalog-row-bottom-cell-right">
+              <div class="catalog-order">
   <div class="catalog-order-panel">
     <div class="catalog-order-panel__button-left">
-      <button type="button" class="catalog-order-button-description">
-        <span class="catalog-order-button-description__text">Описание товара</span>
-      </button>
+      <div class="name-goods">
+        <span class="name-goods__text">Гелевый освежитель воздуха овальной формы с подвеской Гелевый освежитель воздуха овальной формы с подвеской Гелевый освежитель воздуха овальной формы с подвеской Гелевый освежитель воздуха овальной формы с подвеской Гелевый освежитель воздуха овальной формы с подвеской Гелевый освежитель воздуха овальной формы с подвеской</span>
+      </div>
 
-      <ul class="catalog-order-button-list">
-        <li class="catalog-order-button-list-item">
-          <div class="catalog-order-button">
-            <span class="catalog-order-button__text">Заказ O4G21</span>
-          </div>
-        </li>
+      <div class="catalog-order-block">
+        <ul class="catalog-order-button-list">
+          <li class="catalog-order-button-list-item">
+            <div class="catalog-order-button">
+              <span class="catalog-order-button__text">Заказ 1</span>
 
-        <li class="catalog-order-button-list-item">
-          <div class="catalog-order-button active"><span class="catalog-order-button__text">Заказ O4G21</span>
-            <button class="catalog-order-button-remove">
-              <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="10" width="10">
-                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
-              </svg>
-            </button>
-          </div>
-        </li>
+              <button class="catalog-order-button-remove">
+                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
+                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
+                </svg>
+              </button>
+            </div>
+          </li>
 
-        <li class="catalog-order-button-list-item">
-          <div class="catalog-order-button">
-            <span class="catalog-order-button__text">Заказ O4G21</span>
-          </div>
-        </li>
+          <li class="catalog-order-button-list-item">
+            <div class="catalog-order-button active">
+              <span class="catalog-order-button__text">Заказ 2</span>
 
-        <li class="catalog-order-button-list-item">
-          <div class="catalog-order-button">
-            <span class="catalog-order-button__text">Заказ O4G21</span>
-          </div>
-        </li>
+              <button class="catalog-order-button-remove">
+                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
+                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
+                </svg>
+              </button>
+            </div>
+          </li>
 
-        <li class="catalog-order-button-list-item">
-          <div class="catalog-order-button">
-            <span class="catalog-order-button__text">Заказ O4G21</span>
-          </div>
-        </li>
-      </ul>
+          <li class="catalog-order-button-list-item">
+            <div class="catalog-order-button">
+              <span class="catalog-order-button__text">Заказ 3</span>
 
-      <button class="catalog-order-button-create-order">
-        <span class="catalog-order-button-create-order__text">+</span>
-      </button>
+              <button class="catalog-order-button-remove">
+                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
+                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="catalog-order-button-list-item">
+            <div class="catalog-order-button">
+              <span class="catalog-order-button__text">Заказ 4</span>
+
+              <button class="catalog-order-button-remove">
+                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
+                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <li class="catalog-order-button-list-item">
+            <div class="catalog-order-button">
+              <span class="catalog-order-button__text">Заказ 5</span>
+
+              <button class="catalog-order-button-remove">
+                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
+                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+
+        <button class="catalog-order-button-create-order">
+          <span class="catalog-order-button-create-order__text">+</span>
+        </button>
+      </div>
     </div>
 
     <div class="catalog-order-panel__button-right">
-      <a class="catalog-order-button-make-order" href="/order/">
-        <span class="catalog-order-button-make-order__ico">
+      <div class="catalog-order-block">
+        <a class="catalog-order-button-make-order" href="/order/">
+          <span class="catalog-order-button-make-order__ico">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.1 10.5563C3.44 10.5563 2.9 11.0963 2.9 11.7563C2.9 12.4163 3.44 12.9563 4.1 12.9563C4.76 12.9563 5.3 12.4163 5.3 11.7563C5.3 11.0963 4.76 10.5563 4.1 10.5563ZM0.5 0.956299V2.1563H1.7L3.86 6.7163L3.02 8.1563C2.96 8.3363 2.9 8.5763 2.9 8.7563C2.9 9.4163 3.44 9.9563 4.1 9.9563H11.3V8.7563H4.34C4.28 8.7563 4.22 8.6963 4.22 8.6363V8.57628L4.76 7.55628H9.2C9.68 7.55628 10.04 7.31628 10.22 6.95628L12.38 3.0563C12.5 2.9363 12.5 2.8763 12.5 2.7563C12.5 2.3963 12.26 2.1563 11.9 2.1563H3.02L2.48 0.956299H0.5ZM10.1 10.5563C9.44 10.5563 8.9 11.0963 8.9 11.7563C8.9 12.4163 9.44 12.9563 10.1 12.9563C10.76 12.9563 11.3 12.4163 11.3 11.7563C11.3 11.0963 10.76 10.5563 10.1 10.5563Z" fill="white"/>
+            </svg>
+          </span>
 
-        </span>
-        <span class="catalog-order-button-make-order__text">Перейти в корзину</span>
-      </a>
+          <span class="catalog-order-button-make-order__text">Перейти в корзину</span>
+        </a>
 
-      <button class="catalog-order-button-export">
-        <svg class="catalog-order-button-export__ico" width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1.07617" width="27" height="23.2667" rx="1.5" stroke="#207245"/>
-          <g clip-path="url(#clip0)">
-            <path d="M14.9294 3.37616H16.189C16.189 3.95569 16.189 4.53306 16.189 5.11259C18.3116 5.11259 20.4342 5.11693 22.5568 5.10608C22.9152 5.12128 23.3096 5.09523 23.6213 5.31445C23.8397 5.63569 23.8143 6.04376 23.8291 6.41275C23.8185 10.1808 23.8227 13.9467 23.8249 17.7126C23.8143 18.3442 23.8821 18.9889 23.7528 19.6118C23.6679 20.0633 23.1378 20.0741 22.7837 20.0893C20.5869 20.0958 18.3879 20.085 16.189 20.0893C16.189 20.7405 16.189 21.3917 16.189 22.0428H14.8722C11.6405 21.4416 8.40255 20.8859 5.16669 20.3064C5.16669 15.2425 5.16669 10.1786 5.16669 5.11476C8.42164 4.53523 11.6766 3.96438 14.9294 3.37616Z" fill="#207245"/>
-            <path d="M16.1889 5.76376C18.5214 5.76376 20.854 5.76376 23.1865 5.76376C23.1865 10.3219 23.1865 14.88 23.1865 19.4382C20.854 19.4382 18.5214 19.4382 16.1889 19.4382C16.1889 19.0041 16.1889 18.57 16.1889 18.1359C16.7551 18.1359 17.3191 18.1359 17.8853 18.1359C17.8853 17.6301 17.8853 17.1222 17.8853 16.6165C17.3191 16.6165 16.7551 16.6165 16.1889 16.6165C16.1889 16.3278 16.1889 16.0369 16.1889 15.7483C16.7551 15.7483 17.3191 15.7483 17.8853 15.7483C17.8853 15.2425 17.8853 14.7346 17.8853 14.2289C17.3191 14.2289 16.7551 14.2289 16.1889 14.2289C16.1889 13.9402 16.1889 13.6493 16.1889 13.3607C16.7551 13.3607 17.3191 13.3607 17.8853 13.3607C17.8853 12.8549 17.8853 12.347 17.8853 11.8413C17.3191 11.8413 16.7551 11.8413 16.1889 11.8413C16.1889 11.5526 16.1889 11.2617 16.1889 10.9731C16.7551 10.9731 17.3191 10.9731 17.8853 10.9731C17.8853 10.4673 17.8853 9.95942 17.8853 9.45369C17.3191 9.45369 16.7551 9.45369 16.1889 9.45369C16.1889 9.165 16.1889 8.87415 16.1889 8.58547C16.7551 8.58547 17.3191 8.58547 17.8853 8.58547C17.8853 8.07973 17.8853 7.57183 17.8853 7.06609C17.3191 7.06609 16.7551 7.06609 16.1889 7.06609C16.1889 6.63198 16.1889 6.19787 16.1889 5.76376Z" fill="white"/>
-            <path d="M18.7335 7.0661C19.7237 7.0661 20.7119 7.0661 21.7021 7.0661C21.7021 7.57184 21.7021 8.07974 21.7021 8.58548C20.7119 8.58548 19.7237 8.58548 18.7335 8.58548C18.7335 8.07974 18.7335 7.57184 18.7335 7.0661Z" fill="#207245"/>
-            <path d="M11.4475 9.09973C11.9267 9.06501 12.4081 9.03462 12.8894 9.01074C12.3233 10.198 11.755 11.3853 11.1782 12.5683C11.7613 13.7838 12.3572 14.9906 12.9425 16.2061C12.4314 16.1757 11.9225 16.1431 11.4115 16.1062C11.051 15.2011 10.612 14.3264 10.3533 13.38C10.065 14.2613 9.65358 15.0926 9.32279 15.9565C8.8584 15.95 8.39401 15.9304 7.92963 15.9109C8.47459 14.8191 9.00047 13.7186 9.5624 12.6334C9.08529 11.5155 8.56153 10.4194 8.06958 9.30811C8.53609 9.27989 9.00259 9.25167 9.4691 9.22563C9.78505 10.0743 10.1307 10.9121 10.3915 11.7825C10.6714 10.86 11.0892 9.99183 11.4475 9.09973Z" fill="white"/>
-            <path d="M18.7335 9.45367C19.7237 9.45367 20.7119 9.45367 21.7021 9.45367C21.7021 9.95941 21.7021 10.4673 21.7021 10.9731C20.7119 10.9731 19.7237 10.9731 18.7335 10.9731C18.7335 10.4673 18.7335 9.95941 18.7335 9.45367Z" fill="#207245"/>
-            <path d="M18.7335 11.8412C19.7237 11.8412 20.7119 11.8412 21.7021 11.8412C21.7021 12.347 21.7021 12.8549 21.7021 13.3606C20.7119 13.3606 19.7237 13.3606 18.7335 13.3606C18.7335 12.8549 18.7335 12.347 18.7335 11.8412Z" fill="#207245"/>
-            <path d="M18.7335 14.2289C19.7237 14.2289 20.7119 14.2289 21.7021 14.2289C21.7021 14.7346 21.7021 15.2425 21.7021 15.7483C20.7119 15.7483 19.7237 15.7483 18.7335 15.7483C18.7335 15.2425 18.7335 14.7346 18.7335 14.2289Z" fill="#207245"/>
-            <path d="M18.7335 16.6165C19.7237 16.6165 20.7119 16.6165 21.7021 16.6165C21.7021 17.1222 21.7021 17.6301 21.7021 18.1358C20.7119 18.1358 19.7237 18.1358 18.7335 18.1358C18.7335 17.6301 18.7335 17.1222 18.7335 16.6165Z" fill="#207245"/>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="18.6667" height="18.6667" fill="white" transform="translate(5.16669 3.37616)"/>
-            </clipPath>
-          </defs>
-        </svg>
-      </button>
+        <button class="catalog-order-button-export">
+          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.92947 0.71405H11.189C11.189 1.29359 11.189 1.87095 11.189 2.45048C13.3117 2.45048 15.4343 2.45483 17.5569 2.44397C17.9152 2.45917 18.3096 2.43312 18.6214 2.65234C18.8398 2.97359 18.8143 3.38165 18.8292 3.75064C18.8186 7.5187 18.8228 11.2846 18.8249 15.0505C18.8143 15.6821 18.8822 16.3268 18.7528 16.9497C18.668 17.4012 18.1379 17.412 17.7838 17.4272C15.5869 17.4337 13.388 17.4229 11.189 17.4272C11.189 18.0784 11.189 18.7296 11.189 19.3807H9.87222C6.6406 18.7795 3.40261 18.2238 0.166748 17.6443C0.166748 12.5804 0.166748 7.51653 0.166748 2.45265C3.4217 1.87312 6.67664 1.30227 9.92947 0.71405Z" fill="#207245"/>
+            <path d="M11.189 3.10165C13.5215 3.10165 15.854 3.10165 18.1866 3.10165C18.1866 7.65979 18.1866 12.2179 18.1866 16.7761C15.854 16.7761 13.5215 16.7761 11.189 16.7761C11.189 16.342 11.189 15.9079 11.189 15.4737C11.7551 15.4737 12.3192 15.4737 12.8854 15.4737C12.8854 14.968 12.8854 14.4601 12.8854 13.9544C12.3192 13.9544 11.7551 13.9544 11.189 13.9544C11.189 13.6657 11.189 13.3748 11.189 13.0862C11.7551 13.0862 12.3192 13.0862 12.8854 13.0862C12.8854 12.5804 12.8854 12.0725 12.8854 11.5668C12.3192 11.5668 11.7551 11.5668 11.189 11.5668C11.189 11.2781 11.189 10.9872 11.189 10.6986C11.7551 10.6986 12.3192 10.6986 12.8854 10.6986C12.8854 10.1928 12.8854 9.68491 12.8854 9.17917C12.3192 9.17917 11.7551 9.17917 11.189 9.17917C11.189 8.89049 11.189 8.59964 11.189 8.31096C11.7551 8.31096 12.3192 8.31096 12.8854 8.31096C12.8854 7.80522 12.8854 7.29731 12.8854 6.79158C12.3192 6.79158 11.7551 6.79158 11.189 6.79158C11.189 6.50289 11.189 6.21204 11.189 5.92336C11.7551 5.92336 12.3192 5.92336 12.8854 5.92336C12.8854 5.41762 12.8854 4.90972 12.8854 4.40398C12.3192 4.40398 11.7551 4.40398 11.189 4.40398C11.189 3.96987 11.189 3.53576 11.189 3.10165Z" fill="white"/>
+            <path d="M13.7336 4.40396C14.7239 4.40396 15.7121 4.40396 16.7023 4.40396C16.7023 4.9097 16.7023 5.4176 16.7023 5.92334C15.7121 5.92334 14.7239 5.92334 13.7336 5.92334C13.7336 5.4176 13.7336 4.9097 13.7336 4.40396Z" fill="#207245"/>
+            <path d="M6.44758 6.43763C6.92681 6.4029 7.40816 6.37251 7.88951 6.34863C7.32334 7.53592 6.75505 8.72321 6.17827 9.90615C6.76141 11.1217 7.35726 12.3285 7.94252 13.544C7.43148 13.5136 6.92257 13.481 6.41153 13.4441C6.05105 12.539 5.6121 11.6643 5.3534 10.7179C5.06502 11.5992 4.65364 12.4305 4.32285 13.2944C3.85846 13.2879 3.39407 13.2683 2.92969 13.2488C3.47465 12.157 4.00053 11.0565 4.56246 9.97127C4.08535 8.85344 3.56159 7.75731 3.06964 6.646C3.53615 6.61778 4.00265 6.58956 4.46916 6.56352C4.78511 7.4122 5.13075 8.25003 5.39157 9.12042C5.67148 8.19793 6.08921 7.32972 6.44758 6.43763Z" fill="white"/>
+            <path d="M13.7336 6.79156C14.7239 6.79156 15.7121 6.79156 16.7023 6.79156C16.7023 7.2973 16.7023 7.80521 16.7023 8.31095C15.7121 8.31095 14.7239 8.31095 13.7336 8.31095C13.7336 7.80521 13.7336 7.2973 13.7336 6.79156Z" fill="#207245"/>
+            <path d="M13.7336 9.17917C14.7239 9.17917 15.7121 9.17917 16.7023 9.17917C16.7023 9.68491 16.7023 10.1928 16.7023 10.6985C15.7121 10.6985 14.7239 10.6985 13.7336 10.6985C13.7336 10.1928 13.7336 9.68491 13.7336 9.17917Z" fill="#207245"/>
+            <path d="M13.7336 11.5668C14.7239 11.5668 15.7121 11.5668 16.7023 11.5668C16.7023 12.0725 16.7023 12.5804 16.7023 13.0861C15.7121 13.0861 14.7239 13.0861 13.7336 13.0861C13.7336 12.5804 13.7336 12.0725 13.7336 11.5668Z" fill="#207245"/>
+            <path d="M13.7336 13.9543C14.7239 13.9543 15.7121 13.9543 16.7023 13.9543C16.7023 14.4601 16.7023 14.968 16.7023 15.4737C15.7121 15.4737 14.7239 15.4737 13.7336 15.4737C13.7336 14.968 13.7336 14.4601 13.7336 13.9543Z" fill="#207245"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="catalog-order-tabs">
+    <div class="table">
+    <div class="table-header">
+        <div class="table-header__inner">
+            <div class="table-row">
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
 
+                        <span class="table-cell__text table-cell__text_hr">Код</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Каталожный номер</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Наименование</span>
+                    </div>
+
+                    <div class="table-cell__drag"></div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Бренд</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Ед.</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Ост.</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__ico table-cell__ico_sort"></span>
+
+                        <span class="table-cell__text table-cell__text_hr">Цена</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__text table-cell__text_hr">Кол-во</span>
+                    </div>
+                </div>
+
+                <div class="table-cell table-cell_hr">
+                    <div class="table-cell__inner">
+                        <span class="table-cell__text table-cell__text_hr"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-body table-body_second">
+        <div class="table-body__inner">
+            <div class="table-row">
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <button type="button" class="button-remove-order-item">x</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <button type="button" class="button-remove-order-item">x</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">031289</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Автомобильный освежитель AIR SURF Black</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">Doctor Marcus, Польша</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">18</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">>3</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">155.15</div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <div class="quantity">
+                            <button class="quantity__btn" type="button">
+                                <svg height="2" width="10" viewBox="0 0 10 2" fill="none" class="quantity__ico">
+                                    <rect width="10" height="1.42857" rx="0.714286" />
+                                </svg>
+                            </button>
+
+                            <input class="quantity__input" name="quantity" type="text" value="1" />
+
+                            <button class="quantity__btn" type="button">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="quantity__ico">
+                                    <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" />
+                                    <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-cell">
+                    <div class="table-cell__inner">
+                        <button type="button" class="button-remove-order-item">x</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   </div>
 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -3272,6 +4452,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--<script src="javascripts/cabinet-catalog.js"></script>-->
+<script src="./js/simplebar.js"></script>
 <script src="./js/app.js"></script>
 <script src="./js/filter.js"></script>
 <script src="./js/test-resize-box.js"></script>
@@ -3283,8 +4464,6 @@
         var par = document.querySelector('.catalog-filter-list');
 
         filter.counterWidth(par);
-
-        console.log(filter.elem);
 
         var catalogHorizontalResize = new Resizing({
             direction: 'horizontal', //'horizontal' or 'vertical'
@@ -3308,17 +4487,19 @@
             boxBottom: '[data-grid="catalog-row-bottom-cell-left"]'
         });
         catalogVerticalLeftBoxResize.init();
-        //
-        // var catalogVerticalRightBoxResize = new Resizing({
-        //     direction: 'vertical', //'horizontal' or 'vertical'
-        //     node: '[data-grid="catalog-cell-right"]',
-        //     lever: '[data-grid="catalog-lever-vertical-cell-right"]',
-        //     button: '[data-grid="button-toggle"]',
-        //     hide: 'bottom',
-        //     boxTop: '[data-grid="catalog-row-top-cell-right"]',
-        //     boxBottom: '[data-grid="catalog-row-bottom-cell-right"]'
-        // });
-        // catalogVerticalRightBoxResize.init();
+
+        var catalogVerticalRightBoxResize = new Resizing({
+            direction: 'vertical', //'horizontal' or 'vertical'
+            node: '[data-grid="catalog-cell-right"]',
+            lever: '[data-grid="catalog-lever-vertical-cell-right"]',
+            button: '[data-grid="button-toggle"]',
+            hide: 'bottom',
+            boxTop: '[data-grid="catalog-row-top-cell-right"]',
+            boxBottom: '[data-grid="catalog-row-bottom-cell-right"]'
+        });
+        catalogVerticalRightBoxResize.init();
+
+      Array.prototype.forEach.call(document.querySelectorAll('.table-body'), function(el) { var sim = new SimpleBar(el); });
     })();
 </script>
 

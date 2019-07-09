@@ -1,15 +1,17 @@
 .catalog-container {
-  height: 450px;
   display: flex;
   flex-direction: column;
+  //flex: 2 1;
+  min-height: 1px;
+  height: 400px;
 
   &__search {
     flex-shrink: 0;
   }
 
   &__goods {
-    flex: 1 1 100%;
+    flex: 1 1;
     display: flex;
-    flex-direction: column;
+    height: 100%;
   }
 }

@@ -1,16 +1,30 @@
 .table-cell {
+  position: relative;
   flex: 1;
   height: 25px;
   display: table-cell;
-  border: 1px solid ;
+  border: 1px solid $c-gray-1;
   align-items: center;
   font-size: 11px;
   font-family: $f-l;
   vertical-align: middle;
-  overflow: hidden;
   white-space: nowrap;
+  padding: 0 8px;
 
   &_hr {
     text-align: center;
+  }
+
+  &__inner {
+    overflow: hidden;
+  }
+
+  &__drag {
+    width: 7px;
+    position: absolute;
+    height: 100%;
+    background: #000;
+    left: -4px;
+    top: 0;
   }
 }

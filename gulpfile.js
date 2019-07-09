@@ -24,8 +24,8 @@ gulp.task('fileinclude', function() {
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
-        .pipe(sass())
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
 });

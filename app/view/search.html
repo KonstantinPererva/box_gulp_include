@@ -1,15 +1,5 @@
 <form action="#" class="search-form voicesearchContainer">
-    <div class="historyGmButton">История</div>
-
-    <button class="search_button">Искать</button>
-
-    <div class="input-row">
-        <input type="search" class="inpsearchgm1" placeholder="Введите поисковый запрос" />
-
-        <span class="close-inp clear_form" data-section_id="15510"></span>
-
-        <div class="srs__lang"></div>
-    </div>
+    <div id="voiceSearchBtn" title="Нажми - говори - отпусти"></div>
 
     <div class="drop-history deskgmhist" style="display:none;">
         <ul>
@@ -37,5 +27,49 @@
         </ul>
     </div>
 
-    <div id="voiceSearchBtn" title="Нажми - говори - отпусти"></div>
+    <div class="input-row">
+        <input type="search" class="inpsearchgm1" placeholder="Введите поисковый запрос" />
+
+        <div class="close-inp clear_form" data-section_id="15510">
+            <span class="close-inp__ico"></span>
+        </div>
+    </div>
+
+    <button type="button" class="search_button">Искать</button>
+
+    <button type="button" class="historyGmButton">История</button>
+
+    <div class="information-type">
+        <span class="information-type__text">Просмотр</span>
+
+        <span class="information-type__button active">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="20" height="2" fill="#C4C4C4"/>
+                <rect y="4" width="20" height="2" fill="#C4C4C4"/>
+                <rect y="8" width="20" height="2" fill="#C4C4C4"/>
+                <rect y="12" width="20" height="2" fill="#C4C4C4"/>
+            </svg>
+        </span>
+
+        <span class="information-type__button">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.85718 0H0V2H2.85718V0Z" fill="#C4C4C4"/>
+                <path d="M2.85718 4H0V6H2.85718V4Z" fill="#C4C4C4"/>
+                <path d="M0 8H2.85718V10H0V8Z" fill="#C4C4C4"/>
+                <path d="M2.85718 12H0V14H2.85718V12Z" fill="#C4C4C4"/>
+                <path d="M5.71423 0H8.57141V2H5.71423V0Z" fill="#C4C4C4"/>
+                <path d="M8.57141 4H5.71423V6H8.57141V4Z" fill="#C4C4C4"/>
+                <path d="M5.71423 8H8.57141V10H5.71423V8Z" fill="#C4C4C4"/>
+                <path d="M8.57141 12H5.71423V14H8.57141V12Z" fill="#C4C4C4"/>
+                <path d="M11.4286 0H14.2858V2H11.4286V0Z" fill="#C4C4C4"/>
+                <path d="M14.2858 4H11.4286V6H14.2858V4Z" fill="#C4C4C4"/>
+                <path d="M11.4286 8H14.2858V10H11.4286V8Z" fill="#C4C4C4"/>
+                <path d="M14.2858 12H11.4286V14H14.2858V12Z" fill="#C4C4C4"/>
+                <path d="M17.1428 0H20V2H17.1428V0Z" fill="#C4C4C4"/>
+                <path d="M20 4H17.1428V6H20V4Z" fill="#C4C4C4"/>
+                <path d="M17.1428 8H20V10H17.1428V8Z" fill="#C4C4C4"/>
+                <path d="M20 12H17.1428V14H20V12Z" fill="#C4C4C4"/>
+            </svg>
+        </span>
+    </div>
 </form>
