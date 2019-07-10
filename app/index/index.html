@@ -8,8 +8,10 @@
 
   <title>Крон-Авто | Онлайн-кабинет</title>
 
-  <link rel="stylesheet" href="./css/simplebar.css"/>
-  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/simplebar.css" />
+  <link rel="stylesheet" href="./css/swiper.css" />
+  <link rel="stylesheet" href="./css/datatables.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700,600italic,600,300italic,300,400italic,700italic&subset=latin,cyrillic'
         rel='stylesheet' type='text/css'/>
@@ -53,9 +55,11 @@
               </div>
 
               <div class="catalog-container__goods">
-                <!--@@include('../view/card_list.html')-->
+                @@include('../view/card_list.html')
 
-                @@include('../view/table.html')
+                <!--@@include('../view/table.html')-->
+
+                @@include('../view/table-test.html')
               </div>
             </div>
 
@@ -71,71 +75,20 @@
       </div>
     </div>
 
-    <!--@@include('../view/popup_detail.html')-->
+    @@include('../view/popup_detail.html')
   </main>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--<script src="javascripts/cabinet-catalog.js"></script>-->
 <script src="./js/simplebar.js"></script>
-<script src="./js/app.js"></script>
 <script src="./js/filter.js"></script>
 <script src="./js/test-resize-box.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/dropdown.js"></script>
+<script src="./js/containerDetail.js"></script>
+<script src="./js/datatables.min.js"></script>
 
-<script>
-    (function () {
-        var filter = new Filter();
-
-        var par = document.querySelector('.catalog-filter-list');
-
-        filter.counterWidth(par);
-
-        var catalogHorizontalResize = new Resizing({
-            direction: 'horizontal', //'horizontal' or 'vertical'
-            node: '[data-grid="catalog-container"]',
-            lever: '[data-grid="catalog-lever-horizontal"]',
-            button: '[data-grid="button-toggle"]',
-            hide: 'left',
-            boxLeft: '[data-grid="catalog-cell-left"]',
-            boxRight: '[data-grid="catalog-cell-right"]',
-            // resizeListener: filter.childrenShare()
-        });
-        catalogHorizontalResize.init();
-
-        var catalogVerticalLeftBoxResize = new Resizing({
-            direction: 'vertical', //'horizontal' or 'vertical'
-            node: '[data-grid="catalog-cell-left"]',
-            lever: '[data-grid="catalog-lever-vertical-cell-left"]',
-            button: '[data-grid="button-toggle"]',
-            hide: 'bottom',
-            boxTop: '[data-grid="catalog-row-top-cell-left"]',
-            boxBottom: '[data-grid="catalog-row-bottom-cell-left"]'
-        });
-        catalogVerticalLeftBoxResize.init();
-
-        var catalogVerticalRightBoxResize = new Resizing({
-            direction: 'vertical', //'horizontal' or 'vertical'
-            node: '[data-grid="catalog-cell-right"]',
-            lever: '[data-grid="catalog-lever-vertical-cell-right"]',
-            button: '[data-grid="button-toggle"]',
-            hide: 'bottom',
-            boxTop: '[data-grid="catalog-row-top-cell-right"]',
-            boxBottom: '[data-grid="catalog-row-bottom-cell-right"]'
-        });
-        catalogVerticalRightBoxResize.init();
-
-      Array.prototype.forEach.call(document.querySelectorAll('.table-body'), function(el) { var sim = new SimpleBar(el); });
-    })();
-</script>
-
-<!--<script>-->
-<!--(function($) {-->
-<!--$(function() {-->
-<!--$('input[type="number"],input[type="checkbox"], select').styler({-->
-<!--selectSearch: true-->
-<!--});-->
-<!--});-->
-<!--})(jQuery);-->
-<!--</script>-->
+<script src="./js/app.js"></script>
 </body>
 </html>

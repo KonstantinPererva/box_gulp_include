@@ -102,7 +102,27 @@
     </div>
   </div>
 
-  <div class="catalog-order-tabs">
-    @@include('./table-order.html')
+  <div class="catalog-order__wrap">
+    <div class="catalog-order-info">
+      <div class="catalog-order-info-offer">
+        <span class="catalog-order-info-offer__text">
+          Возьми на сумму <span class="catalog-order-info-offer__strong">5000</span> получи бонус <span class="catalog-order-info-offer__strong">1 %</span>
+        </span>
+
+        <span class="catalog-order-info-offer__text">
+           Закажи <span class="catalog-order-info-offer__strong">40</span> позиций получи <span class="catalog-order-info-offer__strong">1 % бонусов</span>
+        </span>
+      </div>
+
+      <div class="catalog-order-info-sum">
+        <span class="catalog-order-info-sum__text catalog-order-info-sum__text_bonus">Сумма бонусов <span class="catalog-order-info-sum__strong">1234 бонуса</span></span>
+
+        <span class="catalog-order-info-sum__text catalog-order-info-sum__text_order">Сумма заказа 867.42 грн</span>
+      </div>
+    </div>
+
+    <div class="catalog-order-tabs">
+      @@include('./table-order.html')
+    </div>
   </div>
 </div>

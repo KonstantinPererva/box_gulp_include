@@ -8,20 +8,27 @@
   background: $c-gray-8;
   padding: 0 6px 5px;
 
+  &__wrap {
+    flex-grow: 1;
+    background: #fff;
+    border: 1px solid $c-gray-1;
+    padding: 6px;
+    min-height: 0;
+    height: calc(100% - 47px);
+  }
+
   &-container {
     position: relative;
     z-index: 0;
-    flex: 1 1;
-    min-height: 1px;
+    height: 300px;
+    min-height: 200px;
   }
 
   &-tabs {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #fff;
-    border: 1px solid $c-gray-1;
-    padding: 6px;
+    height: calc(100% - 50px);
   }
 
   &-panel {
