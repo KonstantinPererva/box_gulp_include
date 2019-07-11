@@ -1,16 +1,61 @@
-function DropdownBox(node) {
+function DropdownBox(node, opt) {
     var self = this;
 
+    self.opt = opt || {};
+
+    self.option = Object.assign({
+        accordionParent: null,
+        btn: '[data-button]',
+        box: '[data-box]',
+        indicator: '[data-indicator]',
+        onOpen: null
+    }, self.opt);
+
     self.node = node;
-    self.btn = self.node.querySelector('[data-button]');
-    self.box = self.node.querySelector('[data-box]');
-    self.indicator = self.node.querySelector('[data-indicator]');
+    self.btn = self.node.querySelector(self.option.btn);
+    self.box = self.node.querySelector(self.option.box);
+    self.indicator = self.node.querySelector(self.option.indicator);
 
     self.toggleOpen = function() {
         $(self.box).slideToggle(200);
         $(self.indicator).toggleClass('open');
     };
 
-    self.btn.addEventListener('click', self.toggleOpen);
+    self.closeBox = function() {
+        $(self.option.accordionParent).find(self.option.box).slideUp(200);
+        $(self.option.accordionParent).find(self.option.indicator).removeClass('open');
+    };
+
+    self.accordion = function(el) {
+        $(self.option.accordionParent).find(self.option.box).slideUp(200);
+        $(self.option.accordionParent).find(self.option.indicator).removeClass('open');
+
+        if($(el).is('.open')){
+            $(el).removeClass('open');
+            $(el).parent(self.node).find(self.box).slideUp(200);
+            $(el).parent(self.node).find(self.indicator).removeClass('open');
+        } else {
+            $(self.option.accordionParent).find(self.option.btn).removeClass('open');
+            $(el).addClass('open');
+            $(el).parent(self.node).find(self.box).slideDown(200);
+            $(el).parent(self.node).find(self.indicator).addClass('open');
+        }
+    };
+
+    if (document.querySelector(self.option.accordionParent)) {
+        self.btn.addEventListener('click', function() {
+            self.accordion(this);
+            if (self.option.onOpen !== null) {
+                self.option.onOpen();
+            }
+        })
+    } else {
+        self.btn.addEventListener('click', function() {
+            self.toggleOpen();
+            if (self.option.onOpen !== null) {
+                self.option.onOpen();
+            }
+        })
+    }
 }
 

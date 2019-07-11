@@ -24,8 +24,8 @@
 
   <main role="main">
     <div class="catalog" data-grid="catalog-container">
-      <div class="catalog__hold">
-        <aside class="aside" data-grid="catalog-cell-left">
+      <div class="catalog-grid">
+        <aside class="catalog-grid-left" data-grid="catalog-cell-left">
           <div class="accordiion" data-grid="catalog-row-top-cell-left">
 
             @@include('../view/menu.html')
@@ -47,7 +47,7 @@
           </div>
         </aside>
 
-        <div class="main-holder" data-grid="catalog-cell-right">
+        <div class="catalog-grid-right" data-grid="catalog-cell-right">
           <div class="main-holder__inner">
             <div class="catalog-container" data-grid="catalog-row-top-cell-right">
               <div class="catalog-container__search">
@@ -55,9 +55,9 @@
               </div>
 
               <div class="catalog-container__goods">
-                @@include('../view/card_list.html')
+                <!--@@include('../view/card_list.html')-->
 
-                <!--@@include('../view/table.html')-->
+                @@include('../view/table.html')
 
                 @@include('../view/table-test.html')
               </div>
