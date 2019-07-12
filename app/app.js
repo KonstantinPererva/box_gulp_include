@@ -1,11 +1,11 @@
-(function () {
-    var self = this;
+
 
 // custom filter
     function shareCatalogFilterItem() {
         var filter = new Filter();
         var par = document.querySelector('.catalog-filter-list');
         filter.counterWidth(par);
+        console.log(filter);
     }
 
     shareCatalogFilterItem();
@@ -24,11 +24,7 @@
             [].forEach.call(infoBox, function(el) {
                 new DropdownBox(el,{
                     accordionParent: '[data-group="filter-box"]',
-                    onOpen:  function () {
-                        var filter = new Filter();
-                        var par = document.querySelector('.catalog-filter-list');
-                        filter.counterWidth(par);
-                    }
+                    onOpen:  shareCatalogFilterItem,
                 });
             });
         }
@@ -109,4 +105,3 @@
             });
         });
     }
-})()

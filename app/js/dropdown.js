@@ -45,14 +45,14 @@ function DropdownBox(node, opt) {
     if (document.querySelector(self.option.accordionParent)) {
         self.btn.addEventListener('click', function() {
             self.accordion(this);
-            if (self.option.onOpen !== null) {
+            if (self.option.onOpen) {
                 self.option.onOpen();
             }
         })
     } else {
         self.btn.addEventListener('click', function() {
             self.toggleOpen();
-            if (self.option.onOpen !== null) {
+            if (self.option.onOpen) {
                 self.option.onOpen();
             }
         })

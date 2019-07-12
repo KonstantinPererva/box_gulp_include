@@ -14,22 +14,14 @@ var Filter = function() {
 
         getChildrenBoxes: function (elem) {
             return {
-                children: function () {return elem.children},
-
                 childrenSizes: function () {
-                    var ch = [].slice.call(this.children());
+                    var ch = [].slice.call(elem.children);
 
                     return ch.map(function (el) {
                         el.size = self.getSizeBoxes(el);
 
                         return el;
                     })
-                },
-
-                filtered: function () {
-                    return this.childrenSizes().filter(function (el) {
-                        return el.size.height > 21 && el.size.width + 10 === self.getSizeBoxes(elem).width
-                    });
                 }
             }
         },
