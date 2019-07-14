@@ -1,14 +1,6 @@
-
+var caunterOpen = 0;
 
 // custom filter
-    function shareCatalogFilterItem() {
-        var filter = new Filter();
-        var par = document.querySelector('.catalog-filter-list');
-        filter.counterWidth(par);
-        console.log(filter);
-    }
-
-    shareCatalogFilterItem();
 
 // dropdown box
     if(document.querySelectorAll('[data-container="goods-box"]').length){
@@ -17,22 +9,32 @@
         [].forEach.call(infoBox, function(el) { new DropdownBox(el); });
     }
 
-    function stateFilterBox() {
-        if(document.querySelectorAll('[data-container="filter-box"]').length){
-            var infoBox = document.querySelectorAll('[data-container="filter-box"]');
+var counterOpen = 0;
+var filter = null;
 
-            [].forEach.call(infoBox, function(el) {
-                new DropdownBox(el,{
-                    accordionParent: '[data-group="filter-box"]',
-                    onOpen:  shareCatalogFilterItem,
-                });
+    if(document.querySelectorAll('[data-container="filter-box"]').length){
+        var filterBox = document.querySelectorAll('[data-container="filter-box"]');
+
+        [].forEach.call(filterBox, function(el) {
+            new DropdownBox(el,{
+                accordionParent: '[data-group="filter-box"]',
+                onOpen:  function () {
+                    var par = document.querySelector('.catalog-filter-list');
+
+                    if (counterOpen){
+                        filter.recalculation();
+                    } else {
+                        filter = new Filter();
+                        filter.counterWidth(par);
+                        counterOpen++;
+                    }
+                },
             });
-        }
+        });
     }
 
-    stateFilterBox();
-
 // resize grid page
+
     var catalogHorizontalResize = new Resizing({
         direction: 'horizontal', //'horizontal' or 'vertical'
         node: '[data-grid="catalog-container"]',
@@ -105,3 +107,9 @@
             });
         });
     }
+
+    //
+var order = new AddOrder(
+    document.querySelector('[data-container="button-tabs"]'),
+    document.querySelector('[data-container="tabs"]')
+);

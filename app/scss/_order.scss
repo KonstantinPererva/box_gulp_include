@@ -29,6 +29,16 @@
     display: flex;
     flex-direction: column;
     height: calc(100% - 50px);
+
+    &__item {
+      display: none;
+      height: 100%;
+      overflow: hidden;
+
+      &.active {
+        display: block;
+      }
+    }
   }
 
   &-panel {

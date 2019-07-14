@@ -1,6 +1,7 @@
 var Filter = function() {
     var self = {
         elemList: [],
+        parent: null,
 
         getSizeBoxes : function (elem) {
             var elemWidth = elem.getBoundingClientRect().right - elem.getBoundingClientRect().left;
@@ -26,14 +27,29 @@ var Filter = function() {
             }
         },
 
-        childrenShare: function () {
-            self.elemList.forEach(function (elem) {
+        childrenShare: function (piece) {
+            self.elemList.forEach(function (elem, index) {
                 var textBlock = elem.querySelector('.catalog-filter-selected-link__text');
                 var text = textBlock.textContent;
                 var textAdd = '';
                 var postTextAdd = '';
                 var block = null;
                 var firstBlock = true;
+                var pieceRight = null;
+
+                if (piece) {
+                    pieceRight = piece[index];
+                }
+
+                var mainElement = pieceRight || elem;
+
+                console.log(piece);
+                console.log(pieceRight);
+                console.log(mainElement);
+
+                if(!self.parent){
+                    self.parent = elem.parent;
+                }
 
                 elem.textArr = text.split(' ');
 
@@ -41,10 +57,10 @@ var Filter = function() {
                     textAdd += elem.textArr[j] + " ";
                     if (j === elem.textArr.length - 1) {
                         block = self.newBlockTrimmingLeft(textAdd);
-                        elem.parent.insertBefore(block, elem);
+                        elem.parent.insertBefore(block, mainElement);
                     } else {
                         block = self.newBlockTrimmingRight(textAdd);
-                        elem.parent.insertBefore(block, elem);
+                        elem.parent.insertBefore(block, mainElement);
                     }
 
                     var sizePost = self.getSizeBoxes(block);
@@ -68,7 +84,7 @@ var Filter = function() {
                         }
 
                         function addBlock(block) {
-                            elem.parent.insertBefore(block, elem);
+                            elem.parent.insertBefore(block, mainElement);
                             j--;
                             textAdd = '';
                             elem.widthRemainder = elem.parentWidth;
@@ -83,14 +99,20 @@ var Filter = function() {
                     }
                 }
 
-                elem.remove();
+                if (pieceRight) {
+                    pieceRight.remove();
+                    console.log('remove pieceRight');
+                } else {
+                    elem.remove();
+                    console.log('remove elem');
+                }
             });
         },
 
         newBlockTrimmingRight: function(text) {
             var li = document.createElement('li');
-            li.classList.add('catalog-filter-selected-item');
-            li.classList.add('right');
+            li.classList.add('catalog-filter-selected-item', 'right');
+            li.setAttribute('data-filter-piece', 'right');
 
             var block = document.createElement('span');
             block.classList.add('catalog-filter-selected-link');
@@ -122,8 +144,8 @@ var Filter = function() {
 
         newBlockTrimmingLeft: function(text) {
             var li = document.createElement('li');
-            li.classList.add('catalog-filter-selected-item');
-            li.classList.add('left');
+            li.classList.add('catalog-filter-selected-item', 'left');
+            li.setAttribute('data-filter-piece', 'left');
 
             var block = document.createElement('span');
             block.classList.add('catalog-filter-selected-link');
@@ -155,8 +177,8 @@ var Filter = function() {
 
         newBlockTrimmingBoth: function(text) {
             var li = document.createElement('li');
-            li.classList.add('catalog-filter-selected-item');
-            li.classList.add('both');
+            li.classList.add('catalog-filter-selected-item', 'both');
+            li.setAttribute('data-filter-piece', 'both');
 
             var block = document.createElement('span');
             block.classList.add('catalog-filter-selected-link');
@@ -219,6 +241,21 @@ var Filter = function() {
                     widthRemainder = parentWidth;
                 }
             });
+
+            self.childrenShare();
+        },
+
+        recalculation: function () {
+            var piece = document.querySelectorAll('[data-filter-piece]');
+            var pieceRight = document.querySelectorAll('[data-filter-piece="right"]');
+
+            [].forEach.call(piece, function (el) {
+                if (el.dataset.filterPiece !== 'right') {
+                    el.remove();
+                }
+            });
+
+            console.log('recalculation');
 
             self.childrenShare();
         }

@@ -6,58 +6,10 @@
       </div>
 
       <div class="catalog-order-block">
-        <ul class="catalog-order-button-list">
+        <ul class="catalog-order-button-list"  data-container="button-tabs">
           <li class="catalog-order-button-list-item">
-            <div class="catalog-order-button">
+            <div class="catalog-order-button active" data-button="order" data-id="0">
               <span class="catalog-order-button__text">Заказ 1</span>
-
-              <button class="catalog-order-button-remove">
-                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
-                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
-                </svg>
-              </button>
-            </div>
-          </li>
-
-          <li class="catalog-order-button-list-item">
-            <div class="catalog-order-button active">
-              <span class="catalog-order-button__text">Заказ 2</span>
-
-              <button class="catalog-order-button-remove">
-                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
-                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
-                </svg>
-              </button>
-            </div>
-          </li>
-
-          <li class="catalog-order-button-list-item">
-            <div class="catalog-order-button">
-              <span class="catalog-order-button__text">Заказ 3</span>
-
-              <button class="catalog-order-button-remove">
-                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
-                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
-                </svg>
-              </button>
-            </div>
-          </li>
-
-          <li class="catalog-order-button-list-item">
-            <div class="catalog-order-button">
-              <span class="catalog-order-button__text">Заказ 4</span>
-
-              <button class="catalog-order-button-remove">
-                <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
-                  <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" />
-                </svg>
-              </button>
-            </div>
-          </li>
-
-          <li class="catalog-order-button-list-item">
-            <div class="catalog-order-button">
-              <span class="catalog-order-button__text">Заказ 5</span>
 
               <button class="catalog-order-button-remove">
                 <svg viewBox="0 0 7 7" fill="none" class="catalog-order-button-remove__ico" height="8" width="8">
@@ -68,7 +20,7 @@
           </li>
         </ul>
 
-        <button class="catalog-order-button-create-order">
+        <button class="catalog-order-button-create-order" data-add-order="create-order">
           <span class="catalog-order-button-create-order__text">+</span>
         </button>
       </div>
@@ -121,8 +73,10 @@
       </div>
     </div>
 
-    <div class="catalog-order-tabs">
-      @@include('./table-order.html')
+    <div class="catalog-order-tabs" data-container="tabs">
+      <div class="catalog-order-tabs__item active" data-tab="order" data-id="0">
+        @@include('./table-order.html')
+      </div>
     </div>
   </div>
 </div>
