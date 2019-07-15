@@ -16,6 +16,21 @@ $bg-row: $c-gray-4;
       &:nth-child(odd) {
         background: $bg-row;
       }
+
+      @media (hover: hover) {
+        &:hover {
+          & .table-cell {
+            cursor: pointer;
+            background: $c-gray-11;
+          }
+        }
+      }
+
+      &.active {
+        & .table-cell {
+          background: $c-orange-light;
+        }
+      }
     }
   }
 
@@ -23,6 +38,21 @@ $bg-row: $c-gray-4;
     & .table-row {
       &:nth-child(even) {
         background: $bg-row;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          & .table-cell {
+            cursor: pointer;
+            background: $c-gray-11;
+          }
+        }
+      }
+
+      &.active {
+        & .table-cell {
+          background: $c-orange-light;
+        }
       }
     }
   }

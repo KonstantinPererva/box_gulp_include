@@ -29,7 +29,7 @@ var Filter = function() {
 
         childrenShare: function (piece) {
             self.elemList.forEach(function (elem, index) {
-                var textBlock = elem.querySelector('.catalog-filter-selected-link__text');
+                var textBlock = elem.querySelector('.catalog-filter-link__text');
                 var text = textBlock.textContent;
                 var textAdd = '';
                 var postTextAdd = '';
@@ -111,17 +111,17 @@ var Filter = function() {
 
         newBlockTrimmingRight: function(text) {
             var li = document.createElement('li');
-            li.classList.add('catalog-filter-selected-item', 'right');
+            li.classList.add('catalog-filter-item', 'right');
             li.setAttribute('data-filter-piece', 'right');
 
             var block = document.createElement('span');
-            block.classList.add('catalog-filter-selected-link');
+            block.classList.add('catalog-filter-link');
 
             var blockText = document.createElement('span');
-            blockText.classList.add('catalog-filter-selected-link__text');
+            blockText.classList.add('catalog-filter-link__text');
 
             var trimmingRight = `
-                <svg class="catalog-filter-selected-link__trimming catalog-filter-selected-link__trimming_right" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="catalog-filter-link__trimming catalog-filter-link__trimming_right" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2.5L2.5 0V2.5V5L0 2.5Z" fill="white"/>
                     <path d="M0 6.5L2.5 4V6.5V9L0 6.5Z" fill="white"/>
                     <path d="M0 14.5L2.5 12V14.5V17L0 14.5Z" fill="white"/>
@@ -144,17 +144,17 @@ var Filter = function() {
 
         newBlockTrimmingLeft: function(text) {
             var li = document.createElement('li');
-            li.classList.add('catalog-filter-selected-item', 'left');
+            li.classList.add('catalog-filter-item', 'left');
             li.setAttribute('data-filter-piece', 'left');
 
             var block = document.createElement('span');
-            block.classList.add('catalog-filter-selected-link');
+            block.classList.add('catalog-filter-link');
 
             var blockText = document.createElement('span');
-            blockText.classList.add('catalog-filter-selected-link__text');
+            blockText.classList.add('catalog-filter-link__text');
 
             var trimmingLeft = `
-                <svg class="catalog-filter-selected-link__trimming catalog-filter-selected-link__trimming_left" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="catalog-filter-link__trimming catalog-filter-link__trimming_left" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.5 14.5L4.05312e-06 17L4.05312e-06 14.5V12L2.5 14.5Z" fill="white"/>
                     <path d="M2.5 18.5L4.05312e-06 21L4.05312e-06 18.5V16L2.5 18.5Z" fill="white"/>
                     <path d="M2.5 10.5L4.05312e-06 13L4.05312e-06 10.5V8L2.5 10.5Z" fill="white"/>
@@ -177,17 +177,17 @@ var Filter = function() {
 
         newBlockTrimmingBoth: function(text) {
             var li = document.createElement('li');
-            li.classList.add('catalog-filter-selected-item', 'both');
+            li.classList.add('catalog-filter-item', 'both');
             li.setAttribute('data-filter-piece', 'both');
 
             var block = document.createElement('span');
-            block.classList.add('catalog-filter-selected-link');
+            block.classList.add('catalog-filter-link');
 
             var blockText = document.createElement('span');
-            blockText.classList.add('catalog-filter-selected-link__text');
+            blockText.classList.add('catalog-filter-link__text');
 
             var trimmingRight = `
-                <svg class="catalog-filter-selected-link__trimming catalog-filter-selected-link__trimming_right" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="catalog-filter-link__trimming catalog-filter-link__trimming_right" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2.5L2.5 0V2.5V5L0 2.5Z" fill="white"/>
                     <path d="M0 6.5L2.5 4V6.5V9L0 6.5Z" fill="white"/>
                     <path d="M0 14.5L2.5 12V14.5V17L0 14.5Z" fill="white"/>
@@ -197,7 +197,7 @@ var Filter = function() {
             `;
 
             var trimmingLeft = `
-                <svg class="catalog-filter-selected-link__trimming catalog-filter-selected-link__trimming_left" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="catalog-filter-link__trimming catalog-filter-link__trimming_left" width="3" height="21" viewBox="0 0 3 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.5 14.5L4.05312e-06 17L4.05312e-06 14.5V12L2.5 14.5Z" fill="white"/>
                     <path d="M2.5 18.5L4.05312e-06 21L4.05312e-06 18.5V16L2.5 18.5Z" fill="white"/>
                     <path d="M2.5 10.5L4.05312e-06 13L4.05312e-06 10.5V8L2.5 10.5Z" fill="white"/>

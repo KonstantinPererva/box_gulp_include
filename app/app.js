@@ -1,13 +1,11 @@
-var caunterOpen = 0;
-
 // custom filter
 
 // dropdown box
-    if(document.querySelectorAll('[data-container="goods-box"]').length){
-        var infoBox = document.querySelectorAll('[data-container="goods-box"]');
+if(document.querySelectorAll('[data-container="goods-box"]').length){
+    var infoBox = document.querySelectorAll('[data-container="goods-box"]');
 
-        [].forEach.call(infoBox, function(el) { new DropdownBox(el); });
-    }
+    [].forEach.call(infoBox, function(el) { new DropdownBox(el); });
+}
 
 var counterOpen = 0;
 var filter = null;
@@ -81,8 +79,7 @@ var filter = null;
         new SimpleBar(document.querySelector('.card-list'), { autoHide: false });
     }
 
-
-// swiper
+// swiper detail
     function initSliderDetailGallery() {
         var detailGallery = new Swiper(".goods-gallery",{
             slidesPerView: 1,
@@ -95,21 +92,33 @@ var filter = null;
         });
     }
 
-// detail
-    if (document.querySelectorAll('.table-body .table-row').length){
-        var rows = document.querySelectorAll('.table-body .table-row');
+// open detail
+var detail = new ContainerDetail(document.querySelector('[data-container="detail"]'));
 
-        [].forEach.call(rows, function(row) {
-            row.addEventListener('dblclick', function () {
-                var detail = new ContainerDetail(document.querySelector('[data-container="detail"]'));
-                detail.open();
-                initSliderDetailGallery();
-            });
+if (document.querySelectorAll('.table-body .table-row').length){
+    var rows = document.querySelectorAll('.table-body .table-row');
+
+    [].forEach.call(rows, function(row) {
+        row.addEventListener('dblclick', function () {
+            detail.open();
+            initSliderDetailGallery();
         });
-    }
 
-    //
-var order = new AddOrder(
-    document.querySelector('[data-container="button-tabs"]'),
-    document.querySelector('[data-container="tabs"]')
-);
+        row.addEventListener('click', function () {
+            [].forEach.call(rows, function (row) {
+                row.classList.remove('active');
+            });
+
+            this.classList.add('active');
+        });
+    });
+}
+
+// resize column table
+new TableCellResize('.catalog-order-tabs .table', '.catalog-order-tabs .table-header');
+
+    // add order
+// var order = new AddOrder(
+//     document.querySelector('[data-container="button-tabs"]'),
+//     document.querySelector('[data-container="tabs"]')
+// );

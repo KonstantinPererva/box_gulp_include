@@ -15,8 +15,13 @@
     text-align: center;
   }
 
+  &_filter {
+    padding: 0;
+  }
+
   &__inner {
     overflow: hidden;
+    position: relative;
   }
 
   &__drag {
