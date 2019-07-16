@@ -21,14 +21,14 @@ function DropdownBox(node, opt) {
         $(self.indicator).toggleClass('open');
     };
 
-    self.closeBox = function() {
+    self.closeBox = function(el) {
         $(self.option.accordionParent).find(self.option.box).slideUp(200);
         $(self.option.accordionParent).find(self.option.indicator).removeClass('open');
     };
 
     self.accordion = function(el) {
-        $(self.option.accordionParent).find(self.option.box).slideUp(200);
-        $(self.option.accordionParent).find(self.option.indicator).removeClass('open');
+        $(el).parents(self.option.accordionParent).find(self.option.box).slideUp(200);
+        $(el).parents(self.option.accordionParent).find(self.option.indicator).removeClass('open');
 
         if($(el).is('.open')){
             $(el).removeClass('open');
